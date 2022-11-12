@@ -1,6 +1,6 @@
-import { Drawer, Link } from '@material-ui/core';
-import { Button } from '@material-ui/core';
+import { Button, Drawer } from '@mui/material';
 import { styled } from '@mui/material/styles';
+import Link from 'next/link';
 import React, { useState } from 'react';
 
 const StyledListsContainer = styled('div')((props: { theme?: any }) => {
@@ -11,8 +11,6 @@ const StyledListsContainer = styled('div')((props: { theme?: any }) => {
   flex-direction: column;
   width: 100%;
   font-family: ${theme.typography.fontFamily}
-  
-
   `;
 });
 
@@ -25,6 +23,7 @@ const StyledList = styled('div')((props: { theme?: any }) => {
   justify-content: center;
   font-family: ${theme.typography.fontFamily};
   border-bottom: 1px solid ${theme.palette.custom_grey(0.5).main};
+  margin-left: 20px;
   `;
 });
 
@@ -36,7 +35,7 @@ const StyledListItem = styled(Button)((props: { theme?: any }) => {
   margin: 0;
   color: ${theme.palette.custom_grey().main};
   font-family: ${theme.typography.fontFamily};
-  font-size: 22px;
+  font-size: 18px;
   text-decoration: none;
   `;
 });

@@ -127,7 +127,7 @@ const ServicesScreen = ({ data }: any) => {
         </StyledIntro>
       </StyledIntroContainer>
       <StyledContainer>
-        <StyledGrid spacing={24}>
+        <StyledGrid>
           <StyledGridItem item md={6} xs={12}>
             <h2>{servicesTitle}</h2>
             <StyledTextContainer>

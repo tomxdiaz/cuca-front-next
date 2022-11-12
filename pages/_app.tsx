@@ -1,7 +1,7 @@
 import React from 'react';
 import type { AppProps } from 'next/app';
 import Head from '../src/components/Head/Head';
-import { createTheme, CssBaseline, ThemeProvider } from '@mui/material';
+import { createTheme, ThemeProvider, CssBaseline } from '@mui/material';
 import '@material-ui/core/styles';
 
 declare module '@mui/system/createTheme/createBreakpoints' {

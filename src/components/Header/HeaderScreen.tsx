@@ -6,31 +6,31 @@ import ToolbarAppBar from '../AppBar/ToolbarAppBar';
 const StyledHeader = styled('div')((props: { theme?: any }) => {
   const { theme } = props;
   return `
-    color: theme.palette.custom_grey().main;
+    color: ${theme.palette.custom_grey().main};
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     margin-left: 20px;
     margin-right: 20px;
+    height: 180px;
+    ${theme.breakpoints.down('xl')} {
+      height: 160px;
+    };
   `;
 });
 
 const StyledLogo = styled('div')((props: { theme?: any }) => {
   const { theme } = props;
-  return {};
+  return `
+  height: 100%;
+  `;
 });
 
 const StyledLogoImg = styled('img')((props: { theme?: any }) => {
   const { theme } = props;
   return `
-    width: 180px;
-    ${theme.breakpoints.down('xl')} {
-      width: 140px;
-    };
-    ${theme.breakpoints.down('lg')} {
-      width: 140px;
-    };
+    height: 100%;
   `;
 });
 
