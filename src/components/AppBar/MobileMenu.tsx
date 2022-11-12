@@ -1,8 +1,9 @@
-import { Drawer, Link, ListItemText } from "@material-ui/core";
-import { Button, styled } from "@material-ui/core";
-import React, { useState } from "react";
+import { Drawer, Link } from '@material-ui/core';
+import { Button } from '@material-ui/core';
+import { styled } from '@mui/material/styles';
+import React, { useState } from 'react';
 
-const StyledListsContainer = styled("div")((props: { theme?: any }) => {
+const StyledListsContainer = styled('div')((props: { theme?: any }) => {
   const { theme } = props;
   return `
   label: StyledGridItem;
@@ -15,7 +16,7 @@ const StyledListsContainer = styled("div")((props: { theme?: any }) => {
   `;
 });
 
-const StyledList = styled("div")((props: { theme?: any }) => {
+const StyledList = styled('div')((props: { theme?: any }) => {
   const { theme } = props;
   return `
   label: StyledList;
@@ -40,7 +41,7 @@ const StyledListItem = styled(Button)((props: { theme?: any }) => {
   `;
 });
 
-const StyledText = styled("div")((props: { theme?: any }) => {
+const StyledText = styled('div')((props: { theme?: any }) => {
   const { theme } = props;
   return `
   label: StyledText;
@@ -58,7 +59,7 @@ const StyledDrawer = styled(Drawer)((props: { theme?: any }) => {
   `;
 });
 
-const StyledDrawerList = styled("div")((props: { theme?: any }) => {
+const StyledDrawerList = styled('div')((props: { theme?: any }) => {
   const { theme } = props;
   return `
   label: StyledDrawerList;
@@ -84,7 +85,7 @@ const StyledDrawerListItem = styled(Button)((props: { theme?: any }) => {
   `;
 });
 
-const StyledDrawerListSeparator = styled("div")((props: { theme?: any }) => {
+const StyledDrawerListSeparator = styled('div')((props: { theme?: any }) => {
   const { theme } = props;
   return `
   label: StyledDrawerListSeparator;
@@ -97,7 +98,7 @@ const StyledDrawerListSeparator = styled("div")((props: { theme?: any }) => {
   `;
 });
 
-const StyledLogo = styled("div")((props: { theme?: any }) => {
+const StyledLogo = styled('div')((props: { theme?: any }) => {
   const { theme } = props;
   return `
   label: StyledLogo;
@@ -105,7 +106,7 @@ const StyledLogo = styled("div")((props: { theme?: any }) => {
   `;
 });
 
-const StyledLogoImg = styled("img")((props: { theme?: any }) => {
+const StyledLogoImg = styled('img')((props: { theme?: any }) => {
   const { theme } = props;
   return `
     width: 170px;
@@ -127,9 +128,9 @@ const MobileMenu = ({ mainMenu, logoSrc }: any) => {
   const toggleDrawer =
     (open: boolean) => (event: React.KeyboardEvent | React.MouseEvent) => {
       if (
-        event.type === "keydown" &&
-        ((event as React.KeyboardEvent).key === "Tab" ||
-          (event as React.KeyboardEvent).key === "Shift")
+        event.type === 'keydown' &&
+        ((event as React.KeyboardEvent).key === 'Tab' ||
+          (event as React.KeyboardEvent).key === 'Shift')
       ) {
         return;
       }
@@ -146,41 +147,41 @@ const MobileMenu = ({ mainMenu, logoSrc }: any) => {
           </StyledListItem>
         </StyledList>
       </StyledListsContainer>
-      <StyledDrawer anchor={"left"} open={left} onClose={toggleDrawer(false)}>
+      <StyledDrawer anchor={'left'} open={left} onClose={toggleDrawer(false)}>
         <StyledLogo>
           <StyledLogoImg src={logoSrc} />
         </StyledLogo>
         <StyledDrawerList>
           <StyledDrawerListItem>
-            <StyledLink href={"/"}>Inicio</StyledLink>
+            <StyledLink href={'/'}>Inicio</StyledLink>
           </StyledDrawerListItem>
           <StyledDrawerListItem>
-            <StyledLink href={"/units"}>Cabañas</StyledLink>
+            <StyledLink href={'/units'}>Cabañas</StyledLink>
           </StyledDrawerListItem>
           <StyledDrawerListItem>
-            <StyledLink href={"/services"}>Servicios y Equipamiento</StyledLink>
+            <StyledLink href={'/services'}>Servicios y Equipamiento</StyledLink>
           </StyledDrawerListItem>
           <StyledDrawerListItem>
-            <StyledLink href={"/activities"}>Actividades</StyledLink>
+            <StyledLink href={'/activities'}>Actividades</StyledLink>
           </StyledDrawerListItem>
           <StyledDrawerListItem>
-            <StyledLink href={"/location"}>Ubicacion</StyledLink>
+            <StyledLink href={'/location'}>Ubicacion</StyledLink>
           </StyledDrawerListItem>
           <StyledDrawerListItem>
-            <StyledLink href={"/tariffs"}>Tarifas</StyledLink>
+            <StyledLink href={'/tariffs'}>Tarifas</StyledLink>
           </StyledDrawerListItem>
           <StyledDrawerListSeparator>Unidades</StyledDrawerListSeparator>
           <StyledDrawerListItem>
-            <StyledLink href={"/mono"}>Monoambiente</StyledLink>
+            <StyledLink href={'/mono'}>Monoambiente</StyledLink>
           </StyledDrawerListItem>
           <StyledDrawerListItem>
-            <StyledLink href={"/mono_gde"}>Monoambiente Grande</StyledLink>
+            <StyledLink href={'/mono_gde'}>Monoambiente Grande</StyledLink>
           </StyledDrawerListItem>
           <StyledDrawerListItem>
-            <StyledLink href={"/cab_4"}>Cabaña 4 Personas</StyledLink>
+            <StyledLink href={'/cab_4'}>Cabaña 4 Personas</StyledLink>
           </StyledDrawerListItem>
           <StyledDrawerListItem>
-            <StyledLink href={"/cab_5"}>Cabaña 5 Personas</StyledLink>
+            <StyledLink href={'/cab_5'}>Cabaña 5 Personas</StyledLink>
           </StyledDrawerListItem>
         </StyledDrawerList>
       </StyledDrawer>

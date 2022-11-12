@@ -1,8 +1,9 @@
-import { Grid, styled } from "@material-ui/core";
-import React from "react";
-import BootstrapCarousel from "../Carousel/Carousel";
+import { Grid } from '@material-ui/core';
+import { styled } from '@mui/material/styles';
+import React from 'react';
+import BootstrapCarousel from '../Carousel/Carousel';
 
-const StyledMainContainer = styled("main")((props: { theme?: any }) => {
+const StyledMainContainer = styled('main')((props: { theme?: any }) => {
   const { theme } = props;
   return `
     label: StyledMainContainer;
@@ -11,14 +12,14 @@ const StyledMainContainer = styled("main")((props: { theme?: any }) => {
   `;
 });
 
-const StyledSummaryContainer = styled("div")((props: { theme?: any }) => {
+const StyledSummaryContainer = styled('div')((props: { theme?: any }) => {
   const { theme } = props;
   return `
     label: StyledSummaryContainer;
     margin-left: 80px;
     margin-right: 80px;
     margin-top: 20px;
-    ${theme.breakpoints.down("sm")} {
+    ${theme.breakpoints.down('sm')} {
       margin-left: 20px;
       margin-right: 20px;
     };
@@ -26,11 +27,11 @@ const StyledSummaryContainer = styled("div")((props: { theme?: any }) => {
   `;
 });
 
-const StyledIntroContainer = styled("div")((props: { theme?: any }) => {
+const StyledIntroContainer = styled('div')((props: { theme?: any }) => {
   const { theme } = props;
   return `
     label: StyledIntroContainer;
-    height: 180px;
+    minHeight: 180px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -40,13 +41,15 @@ const StyledIntroContainer = styled("div")((props: { theme?: any }) => {
   `;
 });
 
-const StyledIntro = styled("div")((props: { theme?: any }) => {
+const StyledIntro = styled('div')((props: { theme?: any }) => {
   const { theme } = props;
   return `
     label: StyledIntro;
+    margin-top: 40px;
+    margin-bottom: 40px;
     margin-left: 80px;
     margin-right: 80px;
-    ${theme.breakpoints.down("sm")} {
+    ${theme.breakpoints.down('sm')} {
       margin-left: 20px;
       margin-right: 20px;
     };
@@ -54,7 +57,7 @@ const StyledIntro = styled("div")((props: { theme?: any }) => {
 `;
 });
 
-const StyledIntroText = styled("h1")((props: { theme?: any }) => {
+const StyledIntroText = styled('h1')((props: { theme?: any }) => {
   const { theme } = props;
   return `
     label: StyledIntroText;
@@ -77,7 +80,7 @@ const ActivitiesScreen = ({ title, intro, images, list }: any) => {
             </StyledIntro>
           </StyledIntroContainer>
           <StyledSummaryContainer>
-            <Grid item xs={12}>
+            <Grid item xs={12} style={{ margin: '40px 0px 20px 0px' }}>
               <h1>{title}</h1>
             </Grid>
             <Grid item xs={12}>

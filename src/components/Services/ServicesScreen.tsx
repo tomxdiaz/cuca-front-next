@@ -1,7 +1,8 @@
-import { Grid, styled } from "@material-ui/core";
-import React from "react";
+import { Grid } from '@mui/material';
+import { styled } from '@mui/material/styles';
+import React from 'react';
 
-const StyledIntroContainer = styled("div")((props: { theme?: any }) => {
+const StyledIntroContainer = styled('div')((props: { theme?: any }) => {
   const { theme } = props;
   return `
     label: StyledIntroContainer;
@@ -13,20 +14,31 @@ const StyledIntroContainer = styled("div")((props: { theme?: any }) => {
     justify-content: center;
     background-color: ${theme.palette.custom_summary_bg_color.main};
     padding-top: 40px;
-    ${theme.breakpoints.down("sm")} {
+    ${theme.breakpoints.down('sm')} {
       font-size: 12px;
     };
 
   `;
 });
 
-const StyledIntro = styled("div")((props: { theme?: any }) => {
+const StyledGrid = styled(Grid)((props: { theme?: any }) => {
+  const { theme } = props;
+  return `
+  label: StyledGrid;
+  display: flex;
+  ${theme.breakpoints.down('md')} {
+    flex-direction: column;
+  };
+  `;
+});
+
+const StyledIntro = styled('div')((props: { theme?: any }) => {
   const { theme } = props;
   return `
     label: StyledIntro;
     margin-left: 80px;
     margin-right:80px;
-    ${theme.breakpoints.down("sm")} {
+    ${theme.breakpoints.down('sm')} {
       margin-left: 20px;
       margin-right: 20px;
     };
@@ -43,7 +55,7 @@ const StyledIntro = styled("div")((props: { theme?: any }) => {
 //   `;
 // });
 
-const StyledIntroText = styled("p")((props: { theme?: any }) => {
+const StyledIntroText = styled('p')((props: { theme?: any }) => {
   const { theme } = props;
   return `
     label: StyledIntroText;
@@ -52,7 +64,7 @@ const StyledIntroText = styled("p")((props: { theme?: any }) => {
   `;
 });
 
-const StyledContainer = styled("div")((props: { theme?: any }) => {
+const StyledContainer = styled('div')((props: { theme?: any }) => {
   const { theme } = props;
   return `
     label: StyledContainer;
@@ -63,14 +75,14 @@ const StyledContainer = styled("div")((props: { theme?: any }) => {
     display: flex;
     flex-direction: row;
     width: 100%;
-    ${theme.breakpoints.down("sm")} {
+    ${theme.breakpoints.down('sm')} {
       padding-left: 20px;
       padding-right: 20px;
     };
   `;
 });
 
-const StyledTextContainer = styled("div")((props: { theme?: any }) => {
+const StyledTextContainer = styled('div')((props: { theme?: any }) => {
   const { theme } = props;
   return `
     label: StyledTextContainer;
@@ -84,14 +96,14 @@ const StyledGridItem = styled(Grid)((props: { theme?: any }) => {
   `;
 });
 
-const StyledEquipTitle = styled("h2")((props: { theme?: any }) => {
+const StyledEquipTitle = styled('h2')((props: { theme?: any }) => {
   const { theme } = props;
   return `
     label: StyledEquipTitle;
   `;
 });
 
-const StyledListItem = styled("li")((props: { theme?: any }) => {
+const StyledListItem = styled('li')((props: { theme?: any }) => {
   const { theme } = props;
   return `
     label: StyledListItem;
@@ -99,11 +111,12 @@ const StyledListItem = styled("li")((props: { theme?: any }) => {
 });
 
 const ServicesScreen = ({ data }: any) => {
-  const servicesIntro = data.services.intro;
-  const servicesTitle = data.services.title;
-  const servicesList = data.services.list;
-  const equipmentTitle = data.equipment.title;
-  const equipmentList = data.equipment.list;
+  const { services, equipment } = data;
+  const servicesIntro = services.intro;
+  const servicesTitle = services.title;
+  const servicesList = services.list;
+  const equipmentTitle = equipment.title;
+  const equipmentList = equipment.list;
 
   return (
     <>
@@ -114,7 +127,7 @@ const ServicesScreen = ({ data }: any) => {
         </StyledIntro>
       </StyledIntroContainer>
       <StyledContainer>
-        <Grid container spacing={24}>
+        <StyledGrid spacing={24}>
           <StyledGridItem item md={6} xs={12}>
             <h2>{servicesTitle}</h2>
             <StyledTextContainer>
@@ -122,7 +135,7 @@ const ServicesScreen = ({ data }: any) => {
                 <li key={i}>{service.text}</li>
               ))}
             </StyledTextContainer>
-            <h2>
+            <h2 style={{ maxWidth: '600px' }}>
               Servicios condicionados al protocolo sanitario vigente al momento
               de la estadia
             </h2>
@@ -139,7 +152,7 @@ const ServicesScreen = ({ data }: any) => {
               ))}
             </StyledTextContainer>
           </StyledGridItem>
-        </Grid>
+        </StyledGrid>
       </StyledContainer>
     </>
   );

@@ -1,8 +1,8 @@
-import { styled } from "@material-ui/core";
-import React from "react";
-import htmlHelper from "../../utils/htmlHelper";
+import { styled } from '@mui/material/styles';
+import React from 'react';
+import htmlHelper from '../../utils/htmlHelper';
 
-const StyledMainContainer = styled("main")((props: { theme?: any }) => {
+const StyledMainContainer = styled('main')((props: { theme?: any }) => {
   const { theme } = props;
   return `
       label: StyledMainContainer;
@@ -10,14 +10,14 @@ const StyledMainContainer = styled("main")((props: { theme?: any }) => {
       font-family: ${theme.typography.fontFamily};
       margin-left: 80px;
       margin-right: 80px;
-      ${theme.breakpoints.down("sm")} {
-        marginLeft: 0;
-        marginRight: 0;
+      ${theme.breakpoints.down('md')} {
+      margin-left: 20px;
+      margin-right: 20px;
       },
     `;
 });
 
-const StyledIntroContainer = styled("div")((props: { theme?: any }) => {
+const StyledIntroContainer = styled('div')((props: { theme?: any }) => {
   const { theme } = props;
   return `
     label: StyledIntroContainer;
@@ -29,13 +29,13 @@ const StyledIntroContainer = styled("div")((props: { theme?: any }) => {
     `;
 });
 
-const StyledIntro = styled("div")((props: { theme?: any }) => {
+const StyledIntro = styled('div')((props: { theme?: any }) => {
   const { theme } = props;
   return `
     label: StyledIntro;
     margin-left: 80px;
     margin-right: 80px;
-    ${theme.breakpoints.down("sm")} {
+    ${theme.breakpoints.down('sm')} {
         margin-left: 20px;
         margin-right: 20px;
         font-size: 10px;
@@ -45,7 +45,7 @@ const StyledIntro = styled("div")((props: { theme?: any }) => {
     `;
 });
 
-const StyledIntroText = styled("div")((props: { theme?: any }) => {
+const StyledIntroText = styled('div')((props: { theme?: any }) => {
   const { theme } = props;
   return `
     label: StyledIntroText;
@@ -53,15 +53,15 @@ const StyledIntroText = styled("div")((props: { theme?: any }) => {
     `;
 });
 
-const StyledSummaryContainer = styled("div")((props: { theme?: any }) => {
+const StyledSummaryContainer = styled('div')((props: { theme?: any }) => {
   const { theme } = props;
   return `
     label: StyledSummaryContainer;
-    margin-left: 80px;
-    margin-right: 80px;
-    ${theme.breakpoints.down("sm")} {
-      margin-left: 20px;
-      margin-right: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    ${theme.breakpoints.down('sm')} {
+      margin-left: 10px;
+      margin-right: 10px;
     };
     `;
 });
@@ -70,12 +70,12 @@ const LocationScreen = ({ title, intro }: any) => {
   const cleanIntro = htmlHelper.sanitizeTheHTML(intro);
   return (
     <>
-      <StyledMainContainer id="location">
+      <StyledMainContainer id='location'>
         <div>
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1586.1720185495783!2d-57.03113634190546!3d-37.3343629949605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDIwJzAzLjciUyA1N8KwMDEnNDguMSJX!5e0!3m2!1sen!2sau!4v1478395366017"
-            width="100%"
-            height="300"
+            src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1586.1720185495783!2d-57.03113634190546!3d-37.3343629949605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDIwJzAzLjciUyA1N8KwMDEnNDguMSJX!5e0!3m2!1sen!2sau!4v1478395366017'
+            width='100%'
+            height='300'
             frameBorder={0}
             allowFullScreen={true}
           />

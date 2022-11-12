@@ -1,16 +1,21 @@
-import { Grid, styled } from "@material-ui/core";
-import React from "react";
-import htmlHelper from "../../utils/htmlHelper";
-import Carousel from "../Carousel/Carousel";
+import { Grid } from '@mui/material';
+import { styled } from '@mui/material/styles';
+import React from 'react';
+import htmlHelper from '../../utils/htmlHelper';
+import Carousel from '../Carousel/Carousel';
 
-const StyledContainer = styled("div")((props: { theme?: any }) => {
+const StyledContainer = styled('div')((props: { theme?: any }) => {
   const { theme } = props;
   return `
     label: StyledContainer;
     margin-left: 80px;
     margin-right: 80px;
-    ${theme.breakpoints.down("sm")} {
+    ${theme.breakpoints.down('md')} {
       margin-left: 30px;
+      margin-right: 30px;
+    };
+    ${theme.breakpoints.down('sm')} {
+      margin-left: 20px;
       margin-right: 20px;
     };
     margin-bottom: 50px;
@@ -20,31 +25,37 @@ const StyledContainer = styled("div")((props: { theme?: any }) => {
   `;
 });
 
-const StyledSummaryContainer = styled("div")((props: { theme?: any }) => {
+const StyledTitleContainer = styled('div')((props: { theme?: any }) => {
   const { theme } = props;
   return `
-    label: StyledSummaryContainer;
+    label: StyledTitleContainer;
     background-color: ${theme.palette.custom_summary_bg_color.main};
     padding-bottom: 20px;
     padding-top: 40px;
     text-transform: uppercase;
     color: ${theme.palette.custom_white.main};
-    ${theme.breakpoints.down("sm")} {
+    ${theme.breakpoints.down('sm')} {
       font-size: 12px;
     };
     font-family: ${theme.typography.fontFamily};
   `;
 });
 
-const StyledSummary = styled("h1")((props: { theme?: any }) => {
+const StyledTitle = styled('h1')((props: { theme?: any }) => {
   const { theme } = props;
   return `
-    label: StyledSummary;
-    margin-left: 20px;
-    margin-right: 20px;
-    ${theme.breakpoints.up("sm")} {
-      margin-left: 80px;
-      margin-right: 80px;
+    label: StyledTitle;
+    font-size: 40px;
+    margin-left: 80px;
+    margin-right: 80px;
+    ${theme.breakpoints.down('md')} {
+      margin-left: 30px;
+      margin-right: 30px;
+      font-size: 30px;
+    };
+    ${theme.breakpoints.down('sm')} {
+      margin-left: 20px;
+      margin-right: 20px;
     };
   `;
 });
@@ -54,15 +65,15 @@ const UnitsScreen = ({ unitsPics, welcomeDesc }: any) => {
   return (
     <>
       <Carousel images={unitsPics} />
-      <StyledSummaryContainer>
+      <StyledTitleContainer>
         <Grid item xs={12}>
-          <StyledSummary>Cabañas</StyledSummary>
+          <StyledTitle>Cabañas</StyledTitle>
         </Grid>
-      </StyledSummaryContainer>
+      </StyledTitleContainer>
 
       <StyledContainer>
         <Grid item xs={12}>
-          <div /*className={classes.textContainer}*/>
+          <div>
             <div dangerouslySetInnerHTML={{ __html: sanitizedWelcomeDesc }} />
           </div>
         </Grid>

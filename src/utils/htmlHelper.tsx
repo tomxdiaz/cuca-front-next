@@ -1,9 +1,9 @@
-import sanitizeHtml from "sanitize-html";
+import sanitizeHtml from 'sanitize-html';
 
 const htmlHelper = {
   sanitizeTheHTML: (htmlString: string) => {
     return sanitizeHtml(htmlString, {
-      allowedTags: ["b", "i", "em", "strong", "p", "h1", "h2"],
+      allowedTags: ['b', 'i', 'em', 'strong', 'p', 'h1', 'h2'],
     });
   },
 };

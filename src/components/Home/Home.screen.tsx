@@ -1,16 +1,17 @@
-import React from "react";
-import htmlHelper from "../../utils/htmlHelper";
-import { Grid, styled } from "@material-ui/core";
-import { useMediaQuery } from "react-responsive";
+import React from 'react';
+import htmlHelper from '../../utils/htmlHelper';
+import { Grid } from '@material-ui/core';
+import { useMediaQuery } from 'react-responsive';
+import { styled } from '@mui/material/styles';
 
-const StyledMainContainer = styled("main")((props: { theme?: any }) => {
+const StyledMainContainer = styled('main')((props: { theme?: any }) => {
   const { theme } = props;
   return `
     color: ${theme.palette.custom_grey().main};
   `;
 });
 
-const StyledSummaryContainer = styled("div")((props: { theme?: any }) => {
+const StyledSummaryContainer = styled('div')((props: { theme?: any }) => {
   const { theme } = props;
   return `
     background-color: ${theme.palette.custom_summary_bg_color.main};
@@ -20,12 +21,12 @@ const StyledSummaryContainer = styled("div")((props: { theme?: any }) => {
     `;
 });
 
-const StyledSummary = styled("div")((props: { theme?: any }) => {
+const StyledSummary = styled('div')((props: { theme?: any }) => {
   const { theme } = props;
   return `
     margin-left: 20px;
     margin-right: 20px;
-    ${theme.breakpoints.up("sm")} {
+    ${theme.breakpoints.up('sm')} {
       margin-left: 80px;
       margin-right: 80px;
     };
@@ -33,12 +34,12 @@ const StyledSummary = styled("div")((props: { theme?: any }) => {
   `;
 });
 
-const StyledMainImageContainer = styled("div")((props: { theme?: any }) => {
+const StyledMainImageContainer = styled('div')((props: { theme?: any }) => {
   const { theme } = props;
   return `
     width: 100%;
     height: 76vh;
-    ${theme.breakpoints.down("sm")} {
+    ${theme.breakpoints.down('sm')} {
       height: 37.5vh;
     };
     background-position: center;
@@ -50,27 +51,23 @@ const StyledMainImageContainer = styled("div")((props: { theme?: any }) => {
 const HomeScreen = ({ summary, homeImages }: any) => {
   const cleanSummary = htmlHelper.sanitizeTheHTML(summary);
 
-  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 500px)" });
+  const isTabletOrMobile = useMediaQuery({ query: '(max-width: 500px)' });
 
   const _IMG_SRC = isTabletOrMobile
-    ? process.env.NEXT_PUBLIC_IMG_SRC + "/mobile"
-    : process.env.NEXT_PUBLIC_IMG_SRC + "/desktop";
+    ? process.env.NEXT_PUBLIC_IMG_SRC + '/mobile'
+    : process.env.NEXT_PUBLIC_IMG_SRC + '/desktop';
 
   const mainImgUrl = `${_IMG_SRC}/${homeImages[0]}`;
 
   return (
     <>
-      <StyledMainContainer id="home" /*className={classes.mainContainer}*/>
+      <StyledMainContainer id='home'>
         <StyledMainImageContainer
-          /*className="Home-mainImageContainer Home-mainImage"*/
           style={{ backgroundImage: `url(${mainImgUrl})` }}
         />
-        <StyledSummaryContainer /*className={classes.summaryContainer}*/>
+        <StyledSummaryContainer>
           <Grid item xs={12}>
-            <StyledSummary
-              /*className={classes.summary}*/
-              dangerouslySetInnerHTML={{ __html: cleanSummary }}
-            />
+            <StyledSummary dangerouslySetInnerHTML={{ __html: cleanSummary }} />
           </Grid>
         </StyledSummaryContainer>
       </StyledMainContainer>

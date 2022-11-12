@@ -1,25 +1,30 @@
-import { styled } from "@material-ui/core";
-import PhoneIcon from "@material-ui/icons/Phone";
-import MobileIcon from "@material-ui/icons/StayCurrentPortrait";
-import EmailIcon from "@material-ui/icons/EmailOutlined";
+import PhoneIcon from '@material-ui/icons/Phone';
+import MobileIcon from '@material-ui/icons/StayCurrentPortrait';
+import EmailIcon from '@material-ui/icons/EmailOutlined';
+import { styled } from '@mui/material/styles';
+import { Hidden } from '@mui/material';
 
-const MainContainer = styled("footer")((props: { theme?: any }) => {
+const MainContainer = styled('footer')((props: { theme?: any }) => {
   const { theme } = props;
   return `
     label: MainContainer;
     margin-top: 50px;
-    margin-left: 20px;
-    margin-right: 20px;
-    ${theme.breakpoints.up("sm")} {
-      margin-left: 80px;
+    margin-left: 80px;
       margin-right: 80px;
+    ${theme.breakpoints.down('md')} {
+      margin-left: 40px;
+      margin-right: 40px;
+    };
+    ${theme.breakpoints.down('sm')} {
+      margin-left: 20px;
+      margin-right: 20px;
     };
     color: ${theme.palette.custom_grey().main};
     font-family: ${theme.typography.fontFamily}
   `;
 });
 
-const ContactContainer = styled("div")((props: { theme?: any }) => {
+const ContactContainer = styled('div')((props: { theme?: any }) => {
   const { theme } = props;
   return `
     display: flex;
@@ -28,7 +33,7 @@ const ContactContainer = styled("div")((props: { theme?: any }) => {
   `;
 });
 
-const Contact = styled("ul")((props: { theme?: any }) => {
+const Contact = styled('ul')((props: { theme?: any }) => {
   const { theme } = props;
   return `
     margin-right: 20px;
@@ -40,7 +45,7 @@ const Contact = styled("ul")((props: { theme?: any }) => {
   `;
 });
 
-const ListItem = styled("li")((props: { theme?: any }) => {
+const ListItem = styled('li')((props: { theme?: any }) => {
   const { theme } = props;
   return `
     margin-bottom: 10px;
@@ -80,24 +85,24 @@ const StyledEmailIcon = styled(EmailIcon)((props: { theme?: any }) => {
   `;
 });
 
-const ContactEmail = styled("div")((props: { theme?: any }) => {
+const ContactEmail = styled('div')((props: { theme?: any }) => {
   const { theme } = props;
   return `
     margin-bottom: 40px;
   `;
 });
 
-const EmailLink = styled("a")((props: { theme?: any }) => {
+const EmailLink = styled('a')((props: { theme?: any }) => {
   const { theme } = props;
   return `
-    font-size: 17px;
+    font-size: 16px;
     color: ${theme.palette.custom_grey().main};
     text-decoration: none;
     border: none;
   `;
 });
 
-const WappIcon = styled("img")((props: { theme?: any }) => {
+const WappIcon = styled('img')((props: { theme?: any }) => {
   const { theme } = props;
   return `
     width: 25px;
@@ -121,33 +126,32 @@ const FooterScreen = (props: any) => {
               return (
                 <ListItem key={i}>
                   <a
-                    href="#phone"
+                    href='#phone'
                     title={phone.linkTitle}
                     className={
-                      phone.type === "mobile" ? "Footer-mobile" : "Footer-phone"
+                      phone.type === 'mobile' ? 'Footer-mobile' : 'Footer-phone'
                     }
                   >
-                    {phone.type === "mobile" ? (
-                      <StyledMobileIcon className="Footer-icon" />
+                    {phone.type === 'mobile' ? (
+                      <StyledMobileIcon className='Footer-icon' />
                     ) : (
-                      <StyledPhoneIcon className="Footer-icon" />
+                      <StyledPhoneIcon className='Footer-icon' />
                     )}
                   </a>
                   {phone.showNumber}
-                  {phone.type === "mobile" ? (
-                    <WappIcon src={wappSource} className="Footer-wapp-icon" />
+                  {phone.type === 'mobile' ? (
+                    <WappIcon src={wappSource} className='Footer-wapp-icon' />
                   ) : (
-                    ""
+                    ''
                   )}
                 </ListItem>
               );
             })}
-            <ContactEmail className="Footer-contactEmail">
-              <EmailLink
-                href={`mEmailLinkilto:${email}`}
-                className="Footer-emailLink"
-              >
-                <StyledEmailIcon className="Footer-icon" />
+            <ContactEmail className='Footer-contactEmail'>
+              <EmailLink href={`#email`} className='Footer-emailLink'>
+                <Hidden smDown={true}>
+                  <StyledEmailIcon className='Footer-icon' />
+                </Hidden>
                 <span>{email}</span>
               </EmailLink>
             </ContactEmail>

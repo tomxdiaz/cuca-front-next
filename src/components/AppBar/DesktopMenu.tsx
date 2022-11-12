@@ -1,7 +1,8 @@
-import { Button, Link, styled } from "@material-ui/core";
-import React, { useState } from "react";
+import { Button, Link } from '@material-ui/core';
+import { styled } from '@mui/material/styles';
+import React from 'react';
 
-const StyledListsContainer = styled("div")((props: { theme?: any }) => {
+const StyledListsContainer = styled('div')((props: { theme?: any }) => {
   const { theme } = props;
   return `
   label: StyledGridItem;
@@ -14,7 +15,7 @@ const StyledListsContainer = styled("div")((props: { theme?: any }) => {
   `;
 });
 
-const StyledList = styled("div")((props: { theme?: any }) => {
+const StyledList = styled('div')((props: { theme?: any }) => {
   const { theme } = props;
   return `
   label: StyledGridItem;
@@ -27,7 +28,7 @@ const StyledList = styled("div")((props: { theme?: any }) => {
   `;
 });
 
-const StyledSubList = styled("div")((props: { theme?: any }) => {
+const StyledSubList = styled('div')((props: { theme?: any }) => {
   const { theme } = props;
   return `
   label: StyledSubList;
@@ -71,36 +72,36 @@ const DesktopMenu = (props: any) => {
       <StyledListsContainer>
         <StyledList>
           <StyledListItem>
-            <StyledLink href={"/"}>Inicio</StyledLink>
+            <StyledLink href={'/'}>Inicio</StyledLink>
           </StyledListItem>
           <StyledListItem>
-            <StyledLink href={"/units"}>Cabañas</StyledLink>
+            <StyledLink href={'/units'}>Cabañas</StyledLink>
           </StyledListItem>
           <StyledListItem>
-            <StyledLink href={"/services"}>Servicios y Equipamiento</StyledLink>
+            <StyledLink href={'/services'}>Servicios y Equipamiento</StyledLink>
           </StyledListItem>
           <StyledListItem>
-            <StyledLink href={"/activities"}>Actividades</StyledLink>
+            <StyledLink href={'/activities'}>Actividades</StyledLink>
           </StyledListItem>
           <StyledListItem>
-            <StyledLink href={"/location"}>Ubicacion</StyledLink>
+            <StyledLink href={'/location'}>Ubicacion</StyledLink>
           </StyledListItem>
           <StyledListItem>
-            <StyledLink href={"/tariffs"}>Tarifas</StyledLink>
+            <StyledLink href={'/tariffs'}>Tarifas</StyledLink>
           </StyledListItem>
         </StyledList>
         <StyledSubList>
           <StyledListItem>
-            <StyledLink href={"/mono"}>Monoambiente</StyledLink>
+            <StyledLink href={'/mono'}>Monoambiente</StyledLink>
           </StyledListItem>
           <StyledListItem>
-            <StyledLink href={"/mono_gde"}>Monoambiente Grande</StyledLink>
+            <StyledLink href={'/mono_gde'}>Monoambiente Grande</StyledLink>
           </StyledListItem>
           <StyledListItem>
-            <StyledLink href={"/cab_4"}>Cabaña 4 Personas</StyledLink>
+            <StyledLink href={'/cab_4'}>Cabaña 4 Personas</StyledLink>
           </StyledListItem>
           <StyledListItem>
-            <StyledLink href={"/cab_5"}>Cabaña 5 Personas</StyledLink>
+            <StyledLink href={'/cab_5'}>Cabaña 5 Personas</StyledLink>
           </StyledListItem>
         </StyledSubList>
       </StyledListsContainer>

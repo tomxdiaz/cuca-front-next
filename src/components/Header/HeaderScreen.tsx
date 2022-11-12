@@ -1,8 +1,9 @@
-import { Hidden, styled } from "@material-ui/core";
-import React, { useState } from "react";
-import ToolbarAppBar from "../AppBar/ToolbarAppBar";
+import { Hidden } from '@mui/material';
+import { styled } from '@mui/material/styles';
+import React, { useState } from 'react';
+import ToolbarAppBar from '../AppBar/ToolbarAppBar';
 
-const StyledHeader = styled("div")((props: { theme?: any }) => {
+const StyledHeader = styled('div')((props: { theme?: any }) => {
   const { theme } = props;
   return `
     color: theme.palette.custom_grey().main;
@@ -15,22 +16,25 @@ const StyledHeader = styled("div")((props: { theme?: any }) => {
   `;
 });
 
-const StyledLogo = styled("div")((props: { theme?: any }) => {
+const StyledLogo = styled('div')((props: { theme?: any }) => {
   const { theme } = props;
   return {};
 });
 
-const StyledLogoImg = styled("img")((props: { theme?: any }) => {
+const StyledLogoImg = styled('img')((props: { theme?: any }) => {
   const { theme } = props;
   return `
-    width: 100px;
-    ${theme.breakpoints.up("sm")} {
-      width: 170px;
+    width: 180px;
+    ${theme.breakpoints.down('xl')} {
+      width: 140px;
+    };
+    ${theme.breakpoints.down('lg')} {
+      width: 140px;
     };
   `;
 });
 
-const StyledContact = styled("div")((props: { theme?: any }) => {
+const StyledContact = styled('div')((props: { theme?: any }) => {
   const { theme } = props;
   return `
     display: flex;
@@ -41,7 +45,7 @@ const StyledContact = styled("div")((props: { theme?: any }) => {
   `;
 });
 
-const StyledMenu = styled("nav")((props: { theme?: any }) => {
+const StyledMenu = styled('nav')((props: { theme?: any }) => {
   const { theme } = props;
   return `
     display: flex;
@@ -50,73 +54,49 @@ const StyledMenu = styled("nav")((props: { theme?: any }) => {
   `;
 });
 
-const StyledPhone = styled("div")`
+const StyledPhone = styled('div')`
   label: StyledPhone;
   margin-top: 5px;
 `;
 
-const StyledWappIcon = styled("img")`
+const StyledWappIcon = styled('img')`
   label: StyledWappIcon;
   width: 25px;
   vertical-align: bottom;
 `;
 
-const HeaderScreen = (props: any) => {
-  const { logoUrl, email, phones } = props;
+const HeaderScreen = ({ logoUrl, email, phones }: any) => {
   const _IMG_SRC = process.env.NEXT_PUBLIC_IMG_SRC;
-  const logoSrc = `${_IMG_SRC}/${logoUrl}`;
+  const logoSource = `${_IMG_SRC}/${logoUrl}`;
   const wappSource = `${_IMG_SRC}/whatsapp_sm.png`;
-
-  // const [anchorEl, setAnchorEl] = useState(null);
-
-  // const handleMenuClick = (event: any) => {
-  //   setAnchorEl(event.currentTarget);
-  // };
-
-  // const handleMenuClose = () => {
-  //   setAnchorEl(null);
-  // };
-
-  // const appbarItemClicked = () => {
-  //   console.log("appbarItemClicked");
-  // };
 
   return (
     <>
       <StyledHeader>
         <StyledLogo>
-          <StyledLogoImg src={logoSrc} />
+          <StyledLogoImg src={logoSource} />
         </StyledLogo>
-        {/* <div className={classes.rightContainer}> */}
         <Hidden lgDown={true}>
           <StyledContact>
             <div>{email}</div>
             {phones?.map((phone: any, i: number) => (
               <StyledPhone key={`phone_${i}`}>
-                {phone.showNumber}{" "}
-                {phone.type === "mobile" ? (
+                {phone.showNumber}{' '}
+                {phone.type === 'mobile' ? (
                   <StyledWappIcon src={wappSource} />
                 ) : (
-                  ""
+                  ''
                 )}
               </StyledPhone>
             ))}
           </StyledContact>
         </Hidden>
         <StyledMenu>
-          <ToolbarAppBar
-            logoSrc={logoSrc}
-            // handleMenuClick={handleMenuClick}
-            // appbarItemClicked={appbarItemClicked}
-          />
-          {/* <ButtonAppBar mainMenu={mainMenu} /> */}
+          <ToolbarAppBar logoSrc={logoSource} />
         </StyledMenu>
-        <div className="facebook">
-          <a href="#po" target="_blank" rel="noopener noreferrer">
-            {/* <FacebookIcon /> */}
-          </a>
+        <div className='facebook'>
+          <a href='#po' target='_blank' rel='noopener noreferrer'></a>
         </div>
-        {/* </div> */}
       </StyledHeader>
     </>
   );

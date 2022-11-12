@@ -1,8 +1,9 @@
-import { Grid, styled } from "@material-ui/core";
-import React from "react";
-import { useMediaQuery } from "react-responsive";
+import { Grid } from '@mui/material';
+import { styled } from '@mui/material/styles';
+import React from 'react';
+import { useMediaQuery } from 'react-responsive';
 
-const StyledMainContainer = styled("main")((props: { theme?: any }) => {
+const StyledMainContainer = styled('main')((props: { theme?: any }) => {
   const { theme } = props;
   return `
       label: StyledMainContainer;
@@ -11,7 +12,7 @@ const StyledMainContainer = styled("main")((props: { theme?: any }) => {
     `;
 });
 
-const StyledIntroContainer = styled("div")((props: { theme?: any }) => {
+const StyledIntroContainer = styled('div')((props: { theme?: any }) => {
   const { theme } = props;
   return `
     label: StyledIntroContainer;
@@ -21,7 +22,7 @@ const StyledIntroContainer = styled("div")((props: { theme?: any }) => {
     `;
 });
 
-const StyledIntroText = styled("div")((props: { theme?: any }) => {
+const StyledIntroText = styled('div')((props: { theme?: any }) => {
   const { theme } = props;
   return `
     label: StyledIntroText;
@@ -29,28 +30,28 @@ const StyledIntroText = styled("div")((props: { theme?: any }) => {
     margin-right: 80px;
     color: ${theme.palette.custom_white.main};
     text-transform: uppercase;
-    ${theme.breakpoints.down("sm")} {
+    ${theme.breakpoints.down('sm')} {
         margin-left: 20px;
         margin-right: 20px;
     }
 `;
 });
 
-const StyledContainer = styled("div")((props: { theme?: any }) => {
+const StyledContainer = styled('div')((props: { theme?: any }) => {
   const { theme } = props;
   return `
     label: StyledContainer;
     margin-left: 80px;
     margin-right: 80px;
     width: 100%;
-    ${theme.breakpoints.down("sm")} {
-        margin-left: 20px;
-        margin-right: 20px;
+    ${theme.breakpoints.down('sm')} {
+    margin-left: 20px;
+    margin-right: 20px;
     }
 `;
 });
 
-const StyledHomeImageContainer = styled("div")((props: { theme?: any }) => {
+const StyledHomeImageContainer = styled('div')((props: { theme?: any }) => {
   const { theme } = props;
   return `
       label: StyledHomeImageContainer;
@@ -72,11 +73,11 @@ const TariffsScreen = (props: any) => {
     notesList,
   } = props;
 
-  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 500px)" });
+  const isTabletOrMobile = useMediaQuery({ query: '(max-width: 500px)' });
 
   const _IMG_SRC = isTabletOrMobile
-    ? process.env.NEXT_PUBLIC_IMG_SRC + "/mobile"
-    : process.env.NEXT_PUBLIC_IMG_SRC + "/desktop";
+    ? process.env.NEXT_PUBLIC_IMG_SRC + '/mobile'
+    : process.env.NEXT_PUBLIC_IMG_SRC + '/desktop';
 
   const mainImgUrl = `${_IMG_SRC}/${tariffsMainPic}`;
 
