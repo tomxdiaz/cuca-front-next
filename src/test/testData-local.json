@@ -1,0 +1,317 @@
+{
+    "id": "cuca",
+    "lang": "sp_AR",
+    "header": "Cabañas Cucalambe",
+    "subHeader": "Las Gaviotas - Mar de las Pampas",
+    "tagLine": "Naturaleza &amp; Relax",
+    "logoImage": "logo_cucalambe_web.png",
+    "logoUrl": "/img-test/logo_w_location.jpg",
+
+    "pics": {
+        "home": ["/img-test/pileta/10.jpg"],
+        "units": [
+            "/img-test/pileta/10.jpg",
+            "/img-test/pileta/2.jpg",
+            "/img-test/pileta/5.jpg",
+            "/img-test/pileta/6.jpg",
+            "/img-test/pics_units/2018_11/ext/DSC_3928.jpg",
+            "/img-test/pics_units/2018_11/ext/DSC_3940.jpg",
+            "/img-test/pics_units/2018_11/ext/DSC_3955.jpg",
+            "/img-test/pics_units/2018_11/ext/DSC_3958.jpg",
+            "/img-test/pics_units/2018_11/ext/DSC_3918.jpg",
+            "/img-test/pics_units/2018_11/ext/DSC_3939.jpg",
+            "/img-test/pics_units/2018_11/ext/DSC_3947.jpg",
+            "/img-test/pics_units/2018_11/ext/DSC_3959.jpg"
+        ],
+        "services": [],
+        "activities": [
+            "/img-test/activ/cabalgata.jpg",
+            "/img-test/activ/faro.jpg",
+            "/img-test/activ/quads.jpg",
+            "/img-test/activ/surf.jpg"
+        ],
+        "unitsHome": "/img-test/pics_units/2018_11/ext/DSC_3928.jpg"
+    },
+    "mainMenu": [
+        {
+            "code": "",
+            "name": "Inicio",
+            "pos": 1
+        },
+        {
+            "code": "units",
+            "name": "Cabañas",
+            "children": [
+                {
+                    "code": "unit_mono",
+                    "name": "Monoambiente",
+                    "pos": 1
+                },
+                {
+                    "code": "unit_mono_gde",
+                    "name": "Monoambiente Grande",
+                    "pos": 2
+                },
+                {
+                    "code": "unit_cab_4",
+                    "name": "Cabaña 4 personas",
+                    "pos": 3
+                },
+                {
+                    "code": "unit_cab_5",
+                    "name": "Cabaña 5 personas",
+                    "pos": 4
+                }
+            ],
+            "pos": 2
+        },
+        {
+            "code": "services",
+            "name": "Servicios y Equipamiento",
+            "pos": 3
+        },
+        {
+            "code": "activities",
+            "name": "Actividades",
+            "pos": 4
+        },
+        {
+            "code": "location",
+            "name": "Ubicacion",
+            "pos": 5
+        },
+        {
+            "code": "tariffs",
+            "name": "Tarifas",
+            "pos": 6
+        }
+    ],
+    "summary": "<h1>Cabañas rusticas de diseño a 4 cuadras del mar</h1><p>Unidades monoambientes y de 2 dormitorios para 2, 3, 4 y hasta 5 ocupantes.</p>",
+
+    "welcomeDesc": "<p>Cabañas construidas en bloque y madera, en un entorno natural unico a 400 m. del mar en una delas zonas mas tranquilas y hermosas de la costa Atlántica ...</p><p>Su diseño se destaca por los variados y amplios ventanales que le otorgan gran luminosidad y una agradable vista del entorno natural</p><p>Atendidas por sus dueños, en cálido ambiente familiar</p>",
+    "units": [
+        {
+            "id": "mono",
+            "code": "unit_mono",
+            "title": "Monoambiente",
+            "desc": "<h3>Sus 26 m2 de superficie cubierta se encuentra compuesta por un ambiente con cocina y ba&ntilde;o completo.</h3><p>Deck al frente y deck con parrilla y pileta para lavar en la parte de atras.</p><h4>IDEAL PAREJAS !</h4>",
+            "pics": [
+                "/img-test/pics_units/2018_11/mono/DSC_3857.jpg",
+                "/img-test/pics_units/2018_11/mono/DSC_3858.jpg",
+                "/img-test/pics_units/2018_11/mono/DSC_3860.jpg",
+                "/img-test/pics_units/2018_11/mono/DSC_3866.jpg",
+                "/img-test/pics_units/2018_11/mono/DSC_3867.jpg",
+                "/img-test/pics_units/2018_11/mono/DSC_3871.jpg"
+            ]
+        },
+        {
+            "id": "monoGde",
+            "code": "unit_mono_gde",
+            "title": "Monoambiente Grande",
+            "desc": "<p>Sus 40 m2 de superficie cubierta se encuentra compuesta por un ambiente grande con cocina y ba&ntilde;o completo.</p><p>Cama matrimonial, cama simple fija y espacio para cuna de bebe.</p><p>Deck al frente y deck con parrilla y pileta para lavar en la parte de atras.</p><h4>IDEAL FAMILIA JOVEN !</h4>",
+            "pics": [
+                "/img-test/pics_units/2018_11/monogde/DSC_3876.jpg",
+                "/img-test/pics_units/2018_11/monogde/DSC_3883_1.jpg",
+                "/img-test/pics_units/2018_11/monogde/DSC_3886_1.jpg",
+                "/img-test/pics_units/2018_11/monogde/DSC_3893.jpg"
+            ]
+        },
+        {
+            "id": "cab4",
+            "code": "unit_cab_4",
+            "title": "Cabaña 4 personas",
+            "desc": "<h3>Sus 55 m2 de superficie cubierta se reparten en dos plantas</h3><h4>Planta baja</h4><p>Compuesta por un comedor con cocina integrada y ba&ntilde;o completo.</p><h4>Planta alta</h4><p>Compuesta por dos dormitorios. Un dormitorio con cama matrimonial y balc&oacute;n al frente. El segundo dormitorio posee dos camas fijas.</p><h4>IDEAL FAMILIA JOVEN !</h4>",
+            "pics": [
+                "/img-test/pics_units/2018_11/cab4/DSC_3896.jpg",
+                "/img-test/pics_units/2018_11/cab4/DSC_3898.jpg",
+                "/img-test/pics_units/2018_11/cab4/DSC_3900.jpg",
+                "/img-test/pics_units/2018_11/cab4/DSC_3908.jpg",
+                "/img-test/pics_units/2018_11/cab4/DSC_3913.jpg",
+                "/img-test/pics_units/2018_11/cab4/DSC_3916.jpg",
+                "/img-test/pics_units/2018_11/cab4/DSC_3956.jpg"
+            ]
+        },
+        {
+            "id": "cab5",
+            "code": "unit_cab_5",
+            "title": "Cabaña 5 personas",
+            "desc": "<h3>Sus 62 m2 de superficie cubierta se reparten en dos plantas</h3><h4>Planta baja</h4><p>Compuesta por un comedor con cocina integrada y toilette. Deck al frente y deck con parrilla y pileta para lavar en la parte de atras.<h4>Planta alta</h4><p>Compuesta por dos dormitorios y el ba&ntilde;o principal. Un dormitorio con cama matrimonial y balc&oacute;n al frente.El segundo dormitorio posee tres camas fijas.</p><h4>IDEAL FAMILIA !</h4>",
+            "pics": [
+                "/img-test/pics_units/cab5/IMG_0393.jpg",
+                "/img-test/pics_units/cab5/IMG_0431.jpg",
+                "/img-test/pics_units/cab5/IMG_0432.jpg",
+                "/img-test/pics_units/cab5/IMG_0433.jpg",
+                "/img-test/pics_units/cab5/IMG_0438.jpg"
+            ]
+        }
+    ],
+    "services": {
+        "intro": "EXCELENTE SERVICIO, ATENDIDA POR SUS DUEÑOS, QUE VIVEN EN EL COMPLEJO ...",
+        "title": "Servicios",
+        "list": [
+            {
+                "text": "Desayuno",
+                "icon": "someicon.jpg"
+            },
+            {
+                "text": "Wi Fi - Banda Ancha",
+                "icon": "someicon.jpg"
+            },
+            {
+                "text": "Ropa blanca (Toallas y Sabanas)",
+                "icon": "someicon.jpg"
+            },
+            {
+                "text": "Cochera semicubierta",
+                "icon": "someicon.jpg"
+            }
+        ]
+    },
+    "equipment": {
+        "title": "Equipamiento",
+        "list": [
+            {
+                "text": "DVD en todas las unidades",
+                "icon": "someicon.jpg"
+            },
+            {
+                "text": "Horno a microondas",
+                "icon": "someicon.jpg"
+            },
+            {
+                "text": "Vajilla completa",
+                "icon": "someicon.jpg"
+            },
+            {
+                "text": "Estufa en todos los ambientes",
+                "icon": "someicon.jpg"
+            },
+            {
+                "text": "Practicunas y baneras para bebes",
+                "icon": "someicon.jpg"
+            },
+            {
+                "text": "Deck con parrilla individual",
+                "icon": "someicon.jpg"
+            },
+            {
+                "text": "Juegos de mesa",
+                "icon": "someicon.jpg"
+            },
+            {
+                "text": "Cocina con horno",
+                "icon": "someicon.jpg"
+            },
+            {
+                "text": "LED TV en living y TV en dormitorio matrimonial",
+                "icon": "someicon.jpg"
+            },
+            {
+                "text": "Alarma en todas las unidades",
+                "icon": "someicon.jpg"
+            }
+        ]
+    },
+    "activities": {
+        "intro": "La zona ofrece gran cantidad de actividades posibles tanto al aire libre como en espacios cubiertos",
+        "title": "Actividades en el Area",
+        "list": [
+            {
+                "text": "Alquiler de cuatriciclos y bicicletas",
+                "icon": "icon"
+            },
+            {
+                "text": "Cabalgatas Diurnas y Nocturnas",
+                "icon": "icon"
+            },
+            {
+                "text": "Excursiones al faro",
+                "icon": "icon"
+            },
+            {
+                "text": "Actividades culturales",
+                "icon": "icon"
+            },
+            {
+                "text": "Surf, Windsruf, Kitesurf, Kayak",
+                "icon": "icon"
+            },
+            {
+                "text": "Pintorescos centros comerciales: Mar de las Pampas (400 mt.), Mar Azul (300 mt.) y Villa Gesell (6 km.)",
+                "icon": "icon"
+            }
+        ]
+    },
+    "location": {
+        "title": "Ubicación",
+        "intro": "<p>A 365 km. de Buenos Aires, y a 12 Km a sur de la ciudad de Villa Gesell, entre las localidades de Mar de Las Pampas y Mar Azul, existe una zona de complejos turisticos denominada Las Gaviotas, que se destaca por la tranquilidad y amplitud de espacios.</p><p>Las Cabañas Cucalambe, se encuentran en la esquina de las calles 29 (tambien llamada Azopardo) y Copacabana.</p><p>A tan solo 400 mts. del mar.</p>"
+    },
+    "tariffs": {
+        "title": "Tarifas",
+        "content": "Por favor consultar por detalle de tarifas para temporada 2019/2020",
+        "mainpic": "/img-test/pileta/10.jpg"
+    },
+    "notes": {
+        "title": "Atencion",
+        "items": [
+            {
+                "icon": "icon.jpg",
+                "text": "En temporada baja el minimo son dos noches de alquiler."
+            },
+            {
+                "icon": "icon.jpg",
+                "text": "Horario de ingreso (check-in): 15 hs."
+            },
+            {
+                "icon": "icon.jpg",
+                "text": "Horario de salida (check-out): 10 hs."
+            },
+            {
+                "icon": "icon.jpg",
+                "text": "Consultar por mascotas"
+            },
+            {
+                "icon": "icon.jpg",
+                "text": "No aceptamos cuatriciclos, motos, motos de agua, etc."
+            },
+            {
+                "icon": "icon.jpg",
+                "text": "No se aceptaran mas personas que las acordadas al momento de la reserva."
+            },
+            {
+                "icon": "icon.jpg",
+                "text": "Las reservas se concretan con un deposito bancario del 50 %, saldando el resto al momento del ingreso."
+            },
+            {
+                "icon": "icon.jpg",
+                "text": "Consultar por horario de ingreso y egreso en temporada baja"
+            }
+        ]
+    },
+    "contact": {
+        "summary": "Para mas informacion, tarifas y promociones, no dude en contactarnos. GRACIAS POR ELEGIRNOS !",
+        "phones": [
+            {
+                "number": "02255457245",
+                "showNumber": "(02255) 45 7245",
+                "title": "Telefono fijo",
+                "type": "landLine"
+            },
+
+            {
+                "number": "0225515523627",
+                "showNumber": "(02255) 15 523627",
+                "title": "Telefono movil 1",
+                "type": "mobile"
+            },
+            {
+                "number": "0225515537139",
+                "showNumber": "(02255) 15 537139",
+                "title": "Telefono movil 2",
+                "type": "mobile"
+            }
+        ],
+        "email": "cucalambelasgaviotas@gmail.com",
+        "facebook": "https://www.facebook.com/CabaniasCucalambe"
+    }
+}
