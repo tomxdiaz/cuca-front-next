@@ -204,7 +204,7 @@
         "icon": "icon"
       },
       {
-        "text": "Cabalgatas Diurnas y Nocturnas",
+        "text": "Cabalgatas diurnas y nocturnas",
         "icon": "icon"
       },
       {
@@ -216,11 +216,11 @@
         "icon": "icon"
       },
       {
-        "text": "Surf, Windsruf, Kitesurf, Kayak",
+        "text": "Surf, Windsurf, Kitesurf y Kayak",
         "icon": "icon"
       },
       {
-        "text": "Pintorescos centros comerciales: Mar de las Pampas (400 mt.), Mar Azul (300 mt.) y Villa Gesell (6 km.)",
+        "text": "Pintorescos centros comerciales: Mar de las Pampas (400 mts.), Mar Azul (300 mts.) y Villa Gesell (6 km.)",
         "icon": "icon"
       }
     ]
@@ -231,7 +231,7 @@
   },
   "tariffs": {
     "title": "Tarifas",
-    "content": "Por favor consultar por detalle de tarifas para temporada 2019/2020",
+    "content": "Por favor consultar por detalle de tarifas para temporada 2022/2023",
     "mainpic": "pics_units/pileta/2019_12/IMG_20191219_160444.jpg"
   },
   "notes": {
@@ -276,7 +276,7 @@
     "phones": [
       {
         "number": "02255457245",
-        "showNumber": "(02255) 45 7245",
+        "showNumber": "2255 45 7245",
         "title": "Telefono fijo",
         "type": "landLine"
       },

@@ -140,7 +140,7 @@ const ServicesScreen = ({ data }: any) => {
               de la estadia
             </h2>
             <StyledTextContainer>
-              <li>Desayuno (A partir del 26 de Diciembre 2020)</li>
+              <li>Pan y facturas para el desayuno</li>
               <li>Ropa blanca (Toallas y Sabanas)</li>
             </StyledTextContainer>
           </StyledGridItem>

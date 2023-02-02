@@ -125,19 +125,19 @@ const FooterScreen = (props: any) => {
             {phones.map((phone: any, i: number) => {
               return (
                 <ListItem key={i}>
-                  <a
+                  {/* <a
                     href='#phone'
                     title={phone.linkTitle}
                     className={
                       phone.type === 'mobile' ? 'Footer-mobile' : 'Footer-phone'
                     }
-                  >
-                    {phone.type === 'mobile' ? (
-                      <StyledMobileIcon className='Footer-icon' />
-                    ) : (
-                      <StyledPhoneIcon className='Footer-icon' />
-                    )}
-                  </a>
+                  > */}
+                  {phone.type === 'mobile' ? (
+                    <StyledMobileIcon className='Footer-icon' />
+                  ) : (
+                    <StyledPhoneIcon className='Footer-icon' />
+                  )}
+                  {/* </a> */}
                   {phone.showNumber}
                   {phone.type === 'mobile' ? (
                     <WappIcon src={wappSource} className='Footer-wapp-icon' />
@@ -148,12 +148,12 @@ const FooterScreen = (props: any) => {
               );
             })}
             <ContactEmail className='Footer-contactEmail'>
-              <EmailLink href={`#email`} className='Footer-emailLink'>
-                <Hidden smDown={true}>
-                  <StyledEmailIcon className='Footer-icon' />
-                </Hidden>
-                <span>{email}</span>
-              </EmailLink>
+              {/* <EmailLink href={`#email`} className='Footer-emailLink'> */}
+              <Hidden smDown={true}>
+                <StyledEmailIcon className='Footer-icon' />
+              </Hidden>
+              <span>{email}</span>
+              {/* </EmailLink> */}
             </ContactEmail>
           </Contact>
         </ContactContainer>
