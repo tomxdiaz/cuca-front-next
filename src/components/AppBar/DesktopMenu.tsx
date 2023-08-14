@@ -32,7 +32,7 @@ const StyledSubList = styled('div')((props: { theme?: any }) => {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-left: 120px;
+  margin-left: 80px;
   border-bottom: 1px solid ${theme.palette.custom_grey(0.2).main};
   `;
 });
@@ -41,15 +41,6 @@ const StyledLink = styled(Link)(({ theme }) => ({
   label: 'StyledLink',
   textDecoration: 'none',
 }));
-
-// const StyledListItem = styled(ButtonBase)(({ theme }) => ({
-//   label: 'StyledListItem',
-//   padding: '10px 26px',
-//   fontFamily: theme.typography.fontFamily,
-//   textDecoration: 'none',
-//   textTransform: 'none',
-//   color: theme.palette.custom_grey().main,
-// }));
 
 const StyledListItem = styled(Button)((props: { theme?: any }) => {
   const { theme } = props;
@@ -60,6 +51,7 @@ const StyledListItem = styled(Button)((props: { theme?: any }) => {
   text-fecoration: 'none';
   text-transform: 'none';
   color: ${theme.palette.custom_grey().main};
+  font-size: 14px;
   `;
 });
 
@@ -73,8 +65,8 @@ const DesktopMenu = (props: any) => {
           <StyledLink href={'/'}>
             <StyledListItem>Inicio</StyledListItem>
           </StyledLink>
-          <StyledLink href={'/units'}>
-            <StyledListItem>Cabañas</StyledListItem>
+          <StyledLink href={'/gallery'}>
+            <StyledListItem>Galeria</StyledListItem>
           </StyledLink>
           <StyledLink href={'/services'}>
             <StyledListItem>Servicios y Equipamiento</StyledListItem>

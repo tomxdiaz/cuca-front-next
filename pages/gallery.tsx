@@ -1,17 +1,17 @@
 import React from 'react';
 import Footer from '../src/components/Footer/Footer';
 import Header from '../src/components/Header/Header';
-import UnitsScreen from '../src/components/Units/UnitsScreen';
+import GalleryScreen from '../src/components/Gallery/GalleryScreen';
 import Api from '../src/services/api/api';
 
-const UnitsPage = ({ data }: any) => {
-  const unitsPics = data.pics.units;
+const GalleryPage = ({ data }: any) => {
+  const galleryPics = data.pics.gallery;
   const { welcomeDesc } = data;
 
   return (
     <>
       <Header data={data} />
-      <UnitsScreen unitsPics={unitsPics} welcomeDesc={welcomeDesc} />
+      <GalleryScreen galleryPics={galleryPics} welcomeDesc={welcomeDesc} />
       <Footer data={data} />
     </>
   );
@@ -26,4 +26,4 @@ export const getStaticProps = async () => {
   };
 };
 
-export default UnitsPage;
+export default GalleryPage;

@@ -76,17 +76,12 @@ const HeaderScreen = ({ logoUrl, email, phones }: any) => {
         <StyledLogo>
           <StyledLogoImg src={logoSource} />
         </StyledLogo>
-        <Hidden lgDown={true}>
+        <Hidden mdDown={true}>
           <StyledContact>
             <div>{email}</div>
             {phones?.map((phone: any, i: number) => (
               <StyledPhone key={`phone_${i}`}>
-                {phone.showNumber}{' '}
-                {phone.type === 'mobile' ? (
-                  <StyledWappIcon src={wappSource} />
-                ) : (
-                  ''
-                )}
+                {phone.showNumber} {phone.type === 'mobile' ? <StyledWappIcon src={wappSource} /> : ''}
               </StyledPhone>
             ))}
           </StyledContact>

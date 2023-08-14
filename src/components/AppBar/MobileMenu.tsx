@@ -124,18 +124,13 @@ const StyledLink = styled(Link)((props: { theme?: any }) => {
 const MobileMenu = ({ mainMenu, logoSrc }: any) => {
   const [left, setLeft] = useState(false);
 
-  const toggleDrawer =
-    (open: boolean) => (event: React.KeyboardEvent | React.MouseEvent) => {
-      if (
-        event.type === 'keydown' &&
-        ((event as React.KeyboardEvent).key === 'Tab' ||
-          (event as React.KeyboardEvent).key === 'Shift')
-      ) {
-        return;
-      }
+  const toggleDrawer = (open: boolean) => (event: React.KeyboardEvent | React.MouseEvent) => {
+    if (event.type === 'keydown' && ((event as React.KeyboardEvent).key === 'Tab' || (event as React.KeyboardEvent).key === 'Shift')) {
+      return;
+    }
 
-      setLeft(open);
-    };
+    setLeft(open);
+  };
 
   return (
     <>
@@ -155,7 +150,7 @@ const MobileMenu = ({ mainMenu, logoSrc }: any) => {
             <StyledLink href={'/'}>Inicio</StyledLink>
           </StyledDrawerListItem>
           <StyledDrawerListItem>
-            <StyledLink href={'/units'}>Cabañas</StyledLink>
+            <StyledLink href={'/gallery'}>Galeria</StyledLink>
           </StyledDrawerListItem>
           <StyledDrawerListItem>
             <StyledLink href={'/services'}>Servicios y Equipamiento</StyledLink>

@@ -8,22 +8,19 @@
   "logoUrl": "logo_w_location.jpg",
   "pics": {
     "home": ["pics_units/pileta/2019_12/IMG_20191219_160444.jpg"],
-    "units": [
-      "pics_units/pileta/2019_12/IMG_20191219_160444.jpg",
-      "pics_units/pileta/2019_12/10.jpg",
-      "pics_units/pileta/2019_12/2.jpg",
-      "pics_units/pileta/2019_12/5.jpg",
-      "pics_units/pileta/2019_12/6.jpg",
+    "gallery": [
+      "pics_units/pileta/1.jpg",
+      "pics_units/pileta/2.jpg",
+      "pics_units/pileta/3.jpg",
+      "pics_units/pileta/4.jpg",
+      "pics_units/pileta/5.jpg",
       "pics_units/ext/2019_12/IMG_20191219_160842.jpg",
       "pics_units/ext/2019_12/IMG_20191219_160935.jpg",
       "pics_units/ext/2018_11/DSC_3918.jpg",
-      "pics_units/ext/2018_11/DSC_3939.jpg",
-      "pics_units/ext/2018_11/DSC_3947.jpg",
-      "pics_units/ext/2018_11/DSC_3959.jpg"
+      "pics_units/ext/2018_11/DSC_3939.jpg"
     ],
     "services": [],
-    "activities": ["activ/cabalgata.jpg", "activ/faro.jpg", "activ/surf.jpg"],
-    "unitsHome": "pics_units/ext//2018_11/DSC_3928.jpg"
+    "activities": ["activ/cabalgata.jpg", "activ/faro.jpg", "activ/surf.jpg"]
   },
   "mainMenu": [
     {

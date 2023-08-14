@@ -1,5 +1,5 @@
 import React from 'react';
-import Toolbar from '@material-ui/core/Toolbar';
+import { Toolbar } from '@material-ui/core';
 import MobileMenu from './MobileMenu';
 import DesktopMenu from './DesktopMenu';
 import { Hidden } from '@mui/material';

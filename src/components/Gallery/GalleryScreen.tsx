@@ -60,11 +60,11 @@ const StyledTitle = styled('h1')((props: { theme?: any }) => {
   `;
 });
 
-const UnitsScreen = ({ unitsPics, welcomeDesc }: any) => {
+const GalleryScreen = ({ galleryPics, welcomeDesc }: any) => {
   const sanitizedWelcomeDesc = htmlHelper.sanitizeTheHTML(welcomeDesc);
   return (
     <>
-      <Carousel images={unitsPics} />
+      <Carousel images={galleryPics} />
       <StyledTitleContainer>
         <Grid item xs={12}>
           <StyledTitle>Cabañas</StyledTitle>
@@ -82,4 +82,4 @@ const UnitsScreen = ({ unitsPics, welcomeDesc }: any) => {
   );
 };
 
-export default UnitsScreen;
+export default GalleryScreen;
