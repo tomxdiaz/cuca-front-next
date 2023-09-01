@@ -3,6 +3,7 @@ import type { AppProps } from 'next/app';
 import Head from '../src/components/Head/Head';
 import { createTheme, ThemeProvider, CssBaseline } from '@mui/material';
 import '@material-ui/core/styles';
+import WppFloatingButton from '../src/components/WppFloatingButton/WppFloatingButton';
 
 declare module '@mui/system/createTheme/createBreakpoints' {
   interface BreakpointOverrides {
@@ -66,6 +67,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <CssBaseline />
       <ThemeProvider theme={theme}>
         <Component {...pageProps} />
+        <WppFloatingButton />
       </ThemeProvider>
     </>
   );

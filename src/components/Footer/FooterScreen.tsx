@@ -110,9 +110,10 @@ const WappIcon = styled('img')((props: { theme?: any }) => {
     margin-left: 5px;`;
 });
 
+const _IMG_SRC = process.env.NEXT_PUBLIC_IMG_SRC;
+
 const FooterScreen = (props: any) => {
   const { phones, email, summary, facebook } = props;
-  const _IMG_SRC = process.env.NEXT_PUBLIC_IMG_SRC;
   const wappSource = `${_IMG_SRC}/whatsapp_sm.png`;
 
   return (
@@ -132,18 +133,10 @@ const FooterScreen = (props: any) => {
                       phone.type === 'mobile' ? 'Footer-mobile' : 'Footer-phone'
                     }
                   > */}
-                  {phone.type === 'mobile' ? (
-                    <StyledMobileIcon className='Footer-icon' />
-                  ) : (
-                    <StyledPhoneIcon className='Footer-icon' />
-                  )}
+                  {phone.type === 'mobile' ? <StyledMobileIcon className='Footer-icon' /> : <StyledPhoneIcon className='Footer-icon' />}
                   {/* </a> */}
                   {phone.showNumber}
-                  {phone.type === 'mobile' ? (
-                    <WappIcon src={wappSource} className='Footer-wapp-icon' />
-                  ) : (
-                    ''
-                  )}
+                  {phone.type === 'mobile' ? <WappIcon src={wappSource} className='Footer-wapp-icon' /> : ''}
                 </ListItem>
               );
             })}

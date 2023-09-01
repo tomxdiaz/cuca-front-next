@@ -141,7 +141,7 @@ const MobileMenu = ({ mainMenu, logoSrc }: any) => {
           </StyledListItem>
         </StyledList>
       </StyledListsContainer>
-      <StyledDrawer anchor={'left'} open={left} onClose={toggleDrawer(false)}>
+      <StyledDrawer anchor={'left'} ModalProps={{ disableScrollLock: true }} open={left} onClose={toggleDrawer(false)}>
         <StyledLogo>
           <StyledLogoImg src={logoSrc} />
         </StyledLogo>
