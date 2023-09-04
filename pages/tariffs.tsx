@@ -9,19 +9,11 @@ const TariffsPage = ({ data }: any) => {
   const tariffsTitle = tariffs.title;
   const tariffsContent = tariffs.content;
   const tariffsMainPic = tariffs.mainpic;
-  const notesTitle = notes.title;
-  const notesList = notes.items;
 
   return (
     <>
       <Header data={data} />
-      <TariffsScreen
-        tariffsTitle={tariffsTitle}
-        tariffsContent={tariffsContent}
-        notesTitle={notesTitle}
-        notesList={notesList}
-        tariffsMainPic={tariffsMainPic}
-      />
+      <TariffsScreen tariffsTitle={tariffsTitle} tariffsContent={tariffsContent} tariffsMainPic={tariffsMainPic} />
       <Footer data={data} />
     </>
   );

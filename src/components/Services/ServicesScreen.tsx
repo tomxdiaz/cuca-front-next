@@ -26,8 +26,11 @@ const StyledGrid = styled(Grid)((props: { theme?: any }) => {
   return `
   label: StyledGrid;
   display: flex;
+  gap: 100px;
   ${theme.breakpoints.down('md')} {
     flex-direction: column;
+    gap: 20px;
+
   };
   `;
 });
@@ -86,6 +89,9 @@ const StyledTextContainer = styled('div')((props: { theme?: any }) => {
   const { theme } = props;
   return `
     label: StyledTextContainer;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
   `;
 });
 
@@ -111,12 +117,14 @@ const StyledListItem = styled('li')((props: { theme?: any }) => {
 });
 
 const ServicesScreen = ({ data }: any) => {
-  const { services, equipment } = data;
+  const { services, equipment, notes } = data;
   const servicesIntro = services.intro;
   const servicesTitle = services.title;
   const servicesList = services.list;
   const equipmentTitle = equipment.title;
   const equipmentList = equipment.list;
+  const notesTitle = notes.title;
+  const notesList = notes.list;
 
   return (
     <>
@@ -135,13 +143,18 @@ const ServicesScreen = ({ data }: any) => {
                 <li key={i}>{service.text}</li>
               ))}
             </StyledTextContainer>
-            <h2 style={{ maxWidth: '600px' }}>
-              Servicios condicionados al protocolo sanitario vigente al momento
-              de la estadia
-            </h2>
+
+            <h2 style={{ maxWidth: '600px' }}>{notesTitle}</h2>
             <StyledTextContainer>
-              <li>Pan y facturas para el desayuno</li>
-              <li>Ropa blanca (Toallas y Sabanas)</li>
+              <li>
+                Mascotas <b>CONSULTAR.</b>
+              </li>
+              <li>
+                <b>NO</b> se aceptan cuatriciclos, motos de agua, etc.
+              </li>
+              {notesList.map((note: any, i: number) => (
+                <li key={i}>{note.text}</li>
+              ))}
             </StyledTextContainer>
           </StyledGridItem>
           <StyledGridItem item md={6} xs={12}>

@@ -3,12 +3,13 @@ import MobileIcon from '@material-ui/icons/StayCurrentPortrait';
 import EmailIcon from '@material-ui/icons/EmailOutlined';
 import { styled } from '@mui/material/styles';
 import { Hidden } from '@mui/material';
+import Link from 'next/link';
 
 const MainContainer = styled('footer')((props: { theme?: any }) => {
   const { theme } = props;
   return `
     label: MainContainer;
-    margin-top: 50px;
+    margin-top: 30px;
     margin-left: 80px;
       margin-right: 80px;
     ${theme.breakpoints.down('md')} {
@@ -41,7 +42,7 @@ const Contact = styled('ul')((props: { theme?: any }) => {
     margin-left: 0px;
     text-align: left;
     list-style-type: none;
-    margin-bottom: 0;
+    margin-bottom: 40px;
   `;
 });
 
@@ -49,6 +50,7 @@ const ListItem = styled('li')((props: { theme?: any }) => {
   const { theme } = props;
   return `
     margin-bottom: 10px;
+    
   `;
 });
 
@@ -88,7 +90,10 @@ const StyledEmailIcon = styled(EmailIcon)((props: { theme?: any }) => {
 const ContactEmail = styled('div')((props: { theme?: any }) => {
   const { theme } = props;
   return `
-    margin-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
   `;
 });
 
@@ -123,31 +128,37 @@ const FooterScreen = (props: any) => {
         <ContactContainer>
           <p>{summary}</p>
           <Contact>
+            <Link
+              style={{
+                textDecoration: 'none',
+                color: 'inherit',
+              }}
+              href={`https://mail.google.com/mail/?view=cm&source=mailto&to=${email}`}
+              target='__blank'>
+              <ContactEmail className='Footer-contactEmail'>
+                <Hidden smDown={true}>
+                  <StyledEmailIcon className='Footer-icon' />
+                </Hidden>
+                <span>{email}</span>
+              </ContactEmail>
+            </Link>
             {phones.map((phone: any, i: number) => {
               return (
                 <ListItem key={i}>
-                  {/* <a
-                    href='#phone'
-                    title={phone.linkTitle}
-                    className={
-                      phone.type === 'mobile' ? 'Footer-mobile' : 'Footer-phone'
-                    }
-                  > */}
                   {phone.type === 'mobile' ? <StyledMobileIcon className='Footer-icon' /> : <StyledPhoneIcon className='Footer-icon' />}
-                  {/* </a> */}
                   {phone.showNumber}
-                  {phone.type === 'mobile' ? <WappIcon src={wappSource} className='Footer-wapp-icon' /> : ''}
+                  {phone.type === 'mobile' ? (
+                    <Link
+                      href={`https://wa.me/${phone.number}?text=Hola%20${phone.name}!%20Quer%C3%ADa%20consultar%20por...%20`}
+                      target='__blank'>
+                      <WappIcon className='Footer-wapp-icon' src={wappSource} />
+                    </Link>
+                  ) : (
+                    ''
+                  )}
                 </ListItem>
               );
             })}
-            <ContactEmail className='Footer-contactEmail'>
-              {/* <EmailLink href={`#email`} className='Footer-emailLink'> */}
-              <Hidden smDown={true}>
-                <StyledEmailIcon className='Footer-icon' />
-              </Hidden>
-              <span>{email}</span>
-              {/* </EmailLink> */}
-            </ContactEmail>
           </Contact>
         </ContactContainer>
       </MainContainer>

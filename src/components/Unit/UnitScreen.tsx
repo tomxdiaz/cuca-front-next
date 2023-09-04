@@ -44,18 +44,17 @@ const StyledContainer = styled('div')((props: { theme?: any }) => {
   const { theme } = props;
   return `
     label: StyledContainer;
-    margin-top: 20px;
+    margin: 40px 80px;
     color: ${theme.palette.custom_grey().main};
     font-family: ${theme.typography.fontFamily};
-    margin-right: 80px;
-    margin-left: 80px;
+    font-size: 20px;
     ${theme.breakpoints.down('md')} {
-      margin-left: 30px;
-      margin-right: 30px;
+      margin: 40px 40px;
+      font-size: 18px;
     }
     ${theme.breakpoints.down('sm')} {
-      margin-left: 20px;
-      margin-right: 20px;
+      margin: 40px 20px;
+      font-size: 16px;
     }
     };
   `;

@@ -16,6 +16,7 @@ const StyledWppFloatingButton = styled(Paper)(({ theme }) => ({
     transform: 'scale(1.1)',
   },
   transition: 'transform 0.3s ease-in-out',
+  zIndex: 1,
 }));
 
 const StyledWppFloatingIcon = styled('img')(({ theme }) => ({

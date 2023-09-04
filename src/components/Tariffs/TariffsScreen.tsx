@@ -44,9 +44,13 @@ const StyledContainer = styled('div')((props: { theme?: any }) => {
     margin-left: 80px;
     margin-right: 80px;
     width: 100%;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 700;
     ${theme.breakpoints.down('sm')} {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    font-size: 16px;
     }
 `;
 });
@@ -65,19 +69,11 @@ const StyledHomeImageContainer = styled('div')((props: { theme?: any }) => {
 });
 
 const TariffsScreen = (props: any) => {
-  const {
-    tariffsTitle,
-    tariffsContent,
-    tariffsMainPic,
-    notesTitle,
-    notesList,
-  } = props;
+  const { tariffsTitle, tariffsContent, tariffsMainPic } = props;
 
   const isTabletOrMobile = useMediaQuery({ query: '(max-width: 500px)' });
 
-  const _IMG_SRC = isTabletOrMobile
-    ? process.env.NEXT_PUBLIC_IMG_SRC + '/mobile'
-    : process.env.NEXT_PUBLIC_IMG_SRC + '/desktop';
+  const _IMG_SRC = isTabletOrMobile ? process.env.NEXT_PUBLIC_IMG_SRC + '/mobile' : process.env.NEXT_PUBLIC_IMG_SRC + '/desktop';
 
   const mainImgUrl = `${_IMG_SRC}/${tariffsMainPic}`;
 
@@ -85,9 +81,7 @@ const TariffsScreen = (props: any) => {
     <>
       <StyledMainContainer>
         <Grid container>
-          <StyledHomeImageContainer
-            style={{ backgroundImage: `url(${mainImgUrl})` }}
-          />
+          <StyledHomeImageContainer style={{ backgroundImage: `url(${mainImgUrl})` }} />
           <StyledIntroContainer>
             <div>
               <StyledIntroText>
@@ -101,14 +95,6 @@ const TariffsScreen = (props: any) => {
                 <p>{tariffsContent}</p>
               </Grid>
             </div>
-            <Grid item xs={12}>
-              <h1>{notesTitle}</h1>
-              <ul>
-                {notesList.map((note: any, i: number) => (
-                  <li key={i}>{note.text}</li>
-                ))}
-              </ul>
-            </Grid>
           </StyledContainer>
         </Grid>
       </StyledMainContainer>

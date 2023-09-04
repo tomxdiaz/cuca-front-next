@@ -83,7 +83,7 @@
       "id": "mono",
       "code": "unit_mono",
       "title": "Monoambiente",
-      "desc": "<h3>Sus 26 m2 de superficie cubierta se encuentra compuesta por un ambiente con cocina y ba&ntilde;o completo.</h3><p>Deck al frente y deck con parrilla y pileta para lavar en la parte de atras.</p><h4>IDEAL PAREJAS !</h4>",
+      "desc": "<h3>Sus 26 m2 de superficie cubierta se encuentran compuestos por un ambiente con cocina y baño completo.</h3><p>Deck al frente y deck con parrilla y pileta para lavar en la parte de atrás.</p>",
       "pics": [
         "pics_units/mono/2019_12/frente.jpg",
         "pics_units/mono/2018_11/DSC_3858.jpg",
@@ -97,7 +97,7 @@
       "id": "monoGde",
       "code": "unit_mono_gde",
       "title": "Monoambiente Grande",
-      "desc": "<p>Sus 40 m2 de superficie cubierta se encuentra compuesta por un ambiente grande con cocina y ba&ntilde;o completo.</p><p>Cama matrimonial, cama simple fija y espacio para cuna de bebe.</p><p>Deck al frente y deck con parrilla en la parte de atras.</p><h4>IDEAL FAMILIA JOVEN !</h4>",
+      "desc": "<p>Sus 40 m2 de superficie cubierta se encuentran compuestos por un ambiente grande con cocina y baño completo.</p><p>Cama matrimonial, cama simple fija y espacio para cuna de bebe.</p><p>Deck al frente y deck con parrilla en la parte de atrás.</p>",
       "pics": [
         "pics_units/monogde/2018_11/DSC_3876.jpg",
         "pics_units/monogde/2018_11/DSC_3883_1.jpg",
@@ -109,7 +109,7 @@
       "id": "cab4",
       "code": "unit_cab_4",
       "title": "Cabaña 4 personas",
-      "desc": "<h3>Sus 55 m2 de superficie cubierta se reparten en dos plantas</h3><h4>Planta baja</h4><p>Compuesta por un comedor con cocina integrada y ba&ntilde;o completo.</p><h4>Planta alta</h4><p>Compuesta por dos dormitorios. Un dormitorio con cama matrimonial y balc&oacute;n al frente. El segundo dormitorio posee dos camas fijas.</p><h4>IDEAL FAMILIA JOVEN !</h4>",
+      "desc": "<p><h3>Sus 55 m2 de superficie cubierta se reparten en dos plantas.</h3></p><p>Planta baja compuesta por un comedor con cocina integrada y baño completo. Deck al frente y deck con parrilla y pileta para lavar en la parte de atrás.</p><p>Planta alta compuesta por dos dormitorios. Un dormitorio con cama matrimonial y balc&oacute;n al frente. El segundo dormitorio posee dos camas fijas.</p>",
       "pics": [
         "pics_units/cab4/2019_12/20191222_151535_HDR.jpg",
         "pics_units/cab4/2018_11/DSC_3896.jpg",
@@ -124,7 +124,7 @@
       "id": "cab5",
       "code": "unit_cab_5",
       "title": "Cabaña 5 personas",
-      "desc": "<h3>Sus 62 m2 de superficie cubierta se reparten en dos plantas</h3><h4>Planta baja</h4><p>Compuesta por un comedor con cocina integrada y toilette. Deck al frente y deck con parrilla y pileta para lavar en la parte de atras.<h4>Planta alta</h4><p>Compuesta por dos dormitorios y el ba&ntilde;o principal. Un dormitorio con cama matrimonial y balc&oacute;n al frente.El segundo dormitorio posee tres camas fijas.</p><h4>IDEAL FAMILIA !</h4>",
+      "desc": "<p><h3>Sus 62 m2 de superficie cubierta se reparten en dos plantas.</h3></p><p>Planta baja compuesta por un comedor con cocina integrada y toilette. Deck al frente y deck con parrilla y pileta para lavar en la parte de atrás.<p>Planta alta compuesta por dos dormitorios y el baño principal. Un dormitorio con cama matrimonial y balc&oacute;n al frente. El segundo dormitorio posee tres camas fijas.</p>",
       "pics": [
         "pics_units/cab5/2016_11/IMG_0393.jpg",
         "pics_units/cab5/2019_12/IMG_20191218_160607.jpg",
@@ -138,15 +138,31 @@
     }
   ],
   "services": {
-    "intro": "EXCELENTE SERVICIO. ATENDIDA POR SUS DUEÑOS QUE VIVEN EN EL COMPLEJO",
+    "intro": "Excelente servicio. Atendida por sus propios dueños que viven en el complejo.",
     "title": "Servicios",
     "list": [
       {
-        "text": "Wi Fi - Banda Ancha",
+        "text": "Conexión Wi-Fi con Fibra Óptica.",
         "icon": "someicon.jpg"
       },
       {
-        "text": "Cochera semicubierta",
+        "text": "Ofrecemos pan y facturas para el desayuno.",
+        "icon": "someicon.jpg"
+      },
+      {
+        "text": "Ropa blanca (Toallas y sábanas).",
+        "icon": "someicon.jpg"
+      },
+      {
+        "text": "Piscina (Sin climatizar).",
+        "icon": "someicon.jpg"
+      },
+      {
+        "text": "Parque amplio.",
+        "icon": "someicon.jpg"
+      },
+      {
+        "text": "Cochera semi-cubierta.",
         "icon": "someicon.jpg"
       }
     ]
@@ -155,39 +171,51 @@
     "title": "Equipamiento",
     "list": [
       {
-        "text": "Horno a microondas",
+        "text": "Ventiladores de techo y pie.",
         "icon": "someicon.jpg"
       },
       {
-        "text": "Vajilla completa",
+        "text": "Horno a microondas.",
         "icon": "someicon.jpg"
       },
       {
-        "text": "Estufa en todos los ambientes",
+        "text": "Vajilla completa.",
         "icon": "someicon.jpg"
       },
       {
-        "text": "Practicunas y baneras para bebes",
+        "text": "Estufa en todos los ambientes.",
         "icon": "someicon.jpg"
       },
       {
-        "text": "Deck con parrilla individual",
+        "text": "Practicunas y bañeras para bebes.",
         "icon": "someicon.jpg"
       },
       {
-        "text": "Juegos de mesa",
+        "text": "Deck con parrilla individual.",
         "icon": "someicon.jpg"
       },
       {
-        "text": "Cocina con horno",
+        "text": "Mesa y sillas de exterior.",
         "icon": "someicon.jpg"
       },
       {
-        "text": "LED TV en living y TV en dormitorio matrimonial",
+        "text": "Juegos de mesa.",
         "icon": "someicon.jpg"
       },
       {
-        "text": "Alarma en todas las unidades",
+        "text": "Cocina con horno.",
+        "icon": "someicon.jpg"
+      },
+      {
+        "text": "LED TV en living y TV en dormitorio matrimonial.",
+        "icon": "someicon.jpg"
+      },
+      {
+        "text": "Alarma en todas las unidades.",
+        "icon": "someicon.jpg"
+      },
+      {
+        "text": "Caja de seguridad.",
         "icon": "someicon.jpg"
       }
     ]
@@ -224,16 +252,16 @@
   },
   "location": {
     "title": "Ubicación",
-    "intro": "<p>A 365 km. de Buenos Aires, y a 12 Km a sur de la ciudad de Villa Gesell, entre las localidades de Mar de Las Pampas y Mar Azul, existe una zona de complejos turisticos denominada Las Gaviotas, que se destaca por la tranquilidad y amplitud de espacios.</p><p>Las Cabañas Cucalambe, se encuentran en la esquina de las calles 29 (tambien llamada Azopardo) y Copacabana.</p><p>A tan solo 400 mts. del mar.</p>"
+    "intro": "<p>A 365 km. de Buenos Aires, y a 12 Km a sur de la ciudad de Villa Gesell, entre las localidades de <b>Mar de Las Pampas</b> y <b>Mar Azul</b>, existe una zona de complejos turísticos denominada <b>Las Gaviotas</b>, que se destaca por la tranquilidad y amplitud de sus espacios.</p><p>Las <b>Cabañas Cucalambe</b> se encuentran en la <b>esquina de las calles 29 (tambien llamada Azopardo) y Copacabana.</b></p><p>A tan solo <b>400 mts.</b> del <b>mar</b>, <b>700 mts.</b> del centro de <b>Mar de las Pampas</b> y <b>400 mts.</b> del <b>centro de Mar Azul</b></p>"
   },
   "tariffs": {
     "title": "Tarifas",
-    "content": "Por favor consultar por detalle de tarifas para temporada 2022/2023",
+    "content": "Por favor consultar por detalle de tarifas para temporada 2023/2024.",
     "mainpic": "pics_units/pileta/1.jpg"
   },
   "notes": {
-    "title": "Atencion",
-    "items": [
+    "title": "Atención",
+    "list": [
       {
         "icon": "icon.jpg",
         "text": "En temporada baja el minimo son dos noches de alquiler."
@@ -248,46 +276,32 @@
       },
       {
         "icon": "icon.jpg",
-        "text": "Consultar por mascotas"
-      },
-      {
-        "icon": "icon.jpg",
-        "text": "No aceptamos cuatriciclos, motos, motos de agua, etc."
-      },
-      {
-        "icon": "icon.jpg",
-        "text": "No se aceptaran mas personas que las acordadas al momento de la reserva."
-      },
-      {
-        "icon": "icon.jpg",
-        "text": "Las reservas se concretan con un deposito bancario del 50 %, saldando el resto al momento del ingreso."
-      },
-      {
-        "icon": "icon.jpg",
-        "text": "Consultar por horario de ingreso y egreso en temporada baja"
+        "text": "No se aceptarán mas personas que las acordadas al momento de la reserva."
       }
     ]
   },
   "contact": {
-    "summary": "Para mas informacion, tarifas y promociones, no dude en contactarnos. GRACIAS POR ELEGIRNOS !",
+    "summary": "Para más información, tarifas y promociones no dude en contactarnos. Gracias por elegirnos!",
     "phones": [
       {
-        "number": "02255457245",
-        "showNumber": "2255 45 7245",
+        "number": "5492267523627",
+        "showNumber": "2267 52-3627 (Liliana)",
+        "title": "Telefono movil 1",
+        "type": "mobile",
+        "name": "Liliana"
+      },
+      {
+        "number": "5492267537139",
+        "showNumber": "2267 53-7139 (Pablo)",
+        "title": "Telefono movil 2",
+        "type": "mobile",
+        "name": "Pablo"
+      },
+      {
+        "number": "5492255457245",
+        "showNumber": "2255 45-7245 (Fijo)",
         "title": "Telefono fijo",
         "type": "landLine"
-      },
-      {
-        "number": "0225515523627",
-        "showNumber": "2267 523627",
-        "title": "Telefono movil 1",
-        "type": "mobile"
-      },
-      {
-        "number": "0225515537139",
-        "showNumber": "2267 537139",
-        "title": "Telefono movil 2",
-        "type": "mobile"
       }
     ],
     "email": "cucalambelasgaviotas@gmail.com",

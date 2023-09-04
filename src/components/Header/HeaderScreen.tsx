@@ -2,6 +2,7 @@ import { Hidden } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import React, { useState } from 'react';
 import ToolbarAppBar from '../AppBar/ToolbarAppBar';
+import Link from 'next/link';
 
 const StyledHeader = styled('div')((props: { theme?: any }) => {
   const { theme } = props;
@@ -65,6 +66,11 @@ const StyledWappIcon = styled('img')`
   vertical-align: bottom;
 `;
 
+const StyledLink = styled(Link)(({ theme }) => ({
+  label: 'StyledLink',
+  textDecoration: 'none',
+}));
+
 const HeaderScreen = ({ logoUrl, email, phones }: any) => {
   const _IMG_SRC = process.env.NEXT_PUBLIC_IMG_SRC;
   const logoSource = `${_IMG_SRC}/${logoUrl}`;
@@ -73,15 +79,37 @@ const HeaderScreen = ({ logoUrl, email, phones }: any) => {
   return (
     <>
       <StyledHeader>
-        <StyledLogo>
-          <StyledLogoImg src={logoSource} />
-        </StyledLogo>
+        <StyledLink style={{ height: '100%' }} href={'/'}>
+          <StyledLogo>
+            <StyledLogoImg src={logoSource} />
+          </StyledLogo>
+        </StyledLink>
         <Hidden mdDown={true}>
           <StyledContact>
-            <div>{email}</div>
+            <Link
+              style={{
+                textDecoration: 'none',
+                color: 'inherit',
+              }}
+              href={`https://mail.google.com/mail/?view=cm&source=mailto&to=${email}`}
+              target='__blank'>
+              <div>
+                <span>{email}</span>
+              </div>
+            </Link>
+
             {phones?.map((phone: any, i: number) => (
               <StyledPhone key={`phone_${i}`}>
-                {phone.showNumber} {phone.type === 'mobile' ? <StyledWappIcon src={wappSource} /> : ''}
+                {phone.showNumber}{' '}
+                {phone.type === 'mobile' ? (
+                  <Link
+                    href={`https://wa.me/${phone.number}?text=Hola%20${phone.name}!%20Quer%C3%ADa%20consultar%20por...%20`}
+                    target='__blank'>
+                    <StyledWappIcon src={wappSource} />
+                  </Link>
+                ) : (
+                  ''
+                )}
               </StyledPhone>
             ))}
           </StyledContact>
@@ -89,9 +117,7 @@ const HeaderScreen = ({ logoUrl, email, phones }: any) => {
         <StyledMenu>
           <ToolbarAppBar logoSrc={logoSource} />
         </StyledMenu>
-        <div className='facebook'>
-          <a href='#po' target='_blank' rel='noopener noreferrer'></a>
-        </div>
+        <div></div>
       </StyledHeader>
     </>
   );
