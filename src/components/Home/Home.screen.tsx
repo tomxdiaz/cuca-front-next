@@ -72,20 +72,8 @@ const ReviewsTitle = styled('h2')(({ theme }) => ({
 const HomeScreen = ({ summary, homeImages }: any) => {
   const cleanSummary = htmlHelper.sanitizeTheHTML(summary);
 
-  const css = `
-    .elfsight-app-f695f2ba-f02a-4c72-b1f7-75879dcb7b19::before a {
-        display: none !important;
-    }
-    es-review-background-container {
-      display: none !important;
-    }
-`;
-
   return (
     <>
-      <Head>
-        <style>{css}</style>
-      </Head>
       <StyledMainContainer id='home'>
         <StyledMainBannerContainer>
           <video
