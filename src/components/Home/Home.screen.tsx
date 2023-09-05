@@ -1,9 +1,8 @@
 import React from 'react';
 import htmlHelper from '../../utils/htmlHelper';
-import { useMediaQuery } from 'react-responsive';
 import { styled } from '@mui/material/styles';
-import { CldVideoPlayer } from 'next-cloudinary';
 import { Grid } from '@mui/material';
+import Head from 'next/head';
 
 const StyledMainContainer = styled('main')((props: { theme?: any }) => {
   const { theme } = props;
@@ -51,11 +50,42 @@ const StyledMainBannerContainer = styled('div')((props: { theme?: any }) => {
   `;
 });
 
+const ReviewsContainer = styled('div')(({ theme }) => ({
+  label: 'ReviewsContainer',
+  margin: '0px 40px',
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'center',
+}));
+
+const ReviewsTitle = styled('h2')(({ theme }) => ({
+  label: 'ReviewsTitle',
+  fontFamily: theme.typography.fontFamily,
+  fontWeight: '700',
+  fontSize: '40px',
+  textAlign: 'center',
+  [theme.breakpoints.down('md')]: {
+    fontSize: '30px',
+  },
+}));
+
 const HomeScreen = ({ summary, homeImages }: any) => {
   const cleanSummary = htmlHelper.sanitizeTheHTML(summary);
 
+  const css = `
+    .elfsight-app-f695f2ba-f02a-4c72-b1f7-75879dcb7b19::before a {
+        display: none !important;
+    }
+    es-review-background-container {
+      display: none !important;
+    }
+`;
+
   return (
     <>
+      <Head>
+        <style>{css}</style>
+      </Head>
       <StyledMainContainer id='home'>
         <StyledMainBannerContainer>
           <video
@@ -77,6 +107,11 @@ const HomeScreen = ({ summary, homeImages }: any) => {
             <StyledSummary dangerouslySetInnerHTML={{ __html: cleanSummary }} />
           </Grid>
         </StyledSummaryContainer>
+        <ReviewsContainer>
+          <ReviewsTitle>Nuestras Reseñas!</ReviewsTitle>
+          <script src='https://static.elfsight.com/platform/platform.js' data-use-service-core defer></script>
+          <div className='elfsight-app-f695f2ba-f02a-4c72-b1f7-75879dcb7b19'></div>
+        </ReviewsContainer>
       </StyledMainContainer>
     </>
   );
