@@ -119,7 +119,7 @@ const _IMG_SRC = process.env.NEXT_PUBLIC_IMG_SRC;
 
 const FooterScreen = (props: any) => {
   const { phones, email, summary, facebook } = props;
-  const wappSource = `${_IMG_SRC}/whatsapp_sm.png`;
+  const wappSource = `${_IMG_SRC}/whatsapp.png`;
 
   return (
     <>

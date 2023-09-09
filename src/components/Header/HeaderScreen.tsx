@@ -74,7 +74,7 @@ const StyledLink = styled(Link)(({ theme }) => ({
 const HeaderScreen = ({ logoUrl, email, phones }: any) => {
   const _IMG_SRC = process.env.NEXT_PUBLIC_IMG_SRC;
   const logoSource = `${_IMG_SRC}/${logoUrl}`;
-  const wappSource = `${_IMG_SRC}/whatsapp_sm.png`;
+  const wappSource = `${_IMG_SRC}/whatsapp.png`;
 
   return (
     <>

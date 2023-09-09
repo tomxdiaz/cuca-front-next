@@ -2,7 +2,6 @@ import React from 'react';
 import htmlHelper from '../../utils/htmlHelper';
 import { styled } from '@mui/material/styles';
 import { Grid } from '@mui/material';
-import Head from 'next/head';
 
 const StyledMainContainer = styled('main')((props: { theme?: any }) => {
   const { theme } = props;
