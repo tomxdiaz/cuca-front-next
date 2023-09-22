@@ -94,11 +94,11 @@ const HomeScreen = ({ summary, homeImages }: any) => {
             <StyledSummary dangerouslySetInnerHTML={{ __html: cleanSummary }} />
           </Grid>
         </StyledSummaryContainer>
-        <ReviewsContainer>
+        {/* <ReviewsContainer>
           <ReviewsTitle>Nuestras Reseñas!</ReviewsTitle>
           <script src='https://static.elfsight.com/platform/platform.js' data-use-service-core defer></script>
           <div className='elfsight-app-f695f2ba-f02a-4c72-b1f7-75879dcb7b19'></div>
-        </ReviewsContainer>
+        </ReviewsContainer> */}
       </StyledMainContainer>
     </>
   );
