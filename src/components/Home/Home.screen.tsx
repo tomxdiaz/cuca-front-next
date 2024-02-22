@@ -85,7 +85,8 @@ const HomeScreen = ({ summary, homeImages }: any) => {
             autoPlay
             muted
             loop
-            src='https://res.cloudinary.com/damu0eilu/video/upload/v1691967124/cucalambe/videos/parque.mp4'
+            // src='https://res.cloudinary.com/damu0eilu/video/upload/v1691967124/cucalambe/videos/parque.mp4'
+            src='/video-test/parque.mp4'
           />
         </StyledMainBannerContainer>
 
