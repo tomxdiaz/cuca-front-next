@@ -34,7 +34,7 @@
       "children": [
         {
           "code": "unit_mono",
-          "name": "Monoambiente",
+          "name": "Monoambiente parejas",
           "pos": 1
         },
         {
@@ -82,7 +82,7 @@
     {
       "id": "mono",
       "code": "unit_mono",
-      "title": "Monoambiente",
+      "title": "Monoambiente parejas",
       "desc": "<h3>Sus 26 m2 de superficie cubierta se encuentran compuestos por un ambiente con cocina y baño completo.</h3><p>Deck al frente y deck con parrilla y pileta para lavar en la parte de atrás.</p>",
       "pics": [
         "pics_units/mono/2019_12/frente.jpg",

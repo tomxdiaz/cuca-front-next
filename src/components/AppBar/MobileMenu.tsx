@@ -166,16 +166,16 @@ const MobileMenu = ({ mainMenu, logoSrc }: any) => {
           </StyledDrawerListItem>
           <StyledDrawerListSeparator>Unidades</StyledDrawerListSeparator>
           <StyledDrawerListItem>
-            <StyledLink href={'/mono'}>Monoambiente</StyledLink>
+            <StyledLink href={'/mono'}>Monoambiente Parejas</StyledLink>
           </StyledDrawerListItem>
           <StyledDrawerListItem>
-            <StyledLink href={'/mono_gde'}>Monoambiente 2/3 personas</StyledLink>
+            <StyledLink href={'/mono_gde'}>Monoambiente 2/3 Pax</StyledLink>
           </StyledDrawerListItem>
           <StyledDrawerListItem>
-            <StyledLink href={'/cab_4'}>Cabaña 3/4 Personas</StyledLink>
+            <StyledLink href={'/cab_4'}>Cabaña 3/4 Pax</StyledLink>
           </StyledDrawerListItem>
           <StyledDrawerListItem>
-            <StyledLink href={'/cab_5'}>Cabaña 4/5 Personas</StyledLink>
+            <StyledLink href={'/cab_5'}>Cabaña 4/5 Pax</StyledLink>
           </StyledDrawerListItem>
         </StyledDrawerList>
       </StyledDrawer>
