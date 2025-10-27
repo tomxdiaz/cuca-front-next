@@ -89,10 +89,10 @@ const DesktopMenu = (props: any) => {
             <StyledListItem>Monoambiente Grande</StyledListItem>
           </StyledLink>
           <StyledLink href={'/cab_4'}>
-            <StyledListItem>Cabaña 4 Personas</StyledListItem>
+            <StyledListItem>Cabaña 3/4 Personas</StyledListItem>
           </StyledLink>
           <StyledLink href={'/cab_5'}>
-            <StyledListItem>Cabaña 5 Personas</StyledListItem>
+            <StyledListItem>Cabaña 4/5 Personas</StyledListItem>
           </StyledLink>
         </StyledSubList>
       </StyledListsContainer>

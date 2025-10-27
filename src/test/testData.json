@@ -44,12 +44,12 @@
         },
         {
           "code": "unit_cab_4",
-          "name": "Cabaña 4 personas",
+          "name": "Cabaña 3/4 personas",
           "pos": 3
         },
         {
           "code": "unit_cab_5",
-          "name": "Cabaña 5 personas",
+          "name": "Cabaña 4/5 personas",
           "pos": 4
         }
       ],
@@ -109,7 +109,7 @@
     {
       "id": "cab4",
       "code": "unit_cab_4",
-      "title": "Cabaña 4 personas",
+      "title": "Cabaña 3/4 personas",
       "desc": "<p><h3>Sus 55 m2 de superficie cubierta se reparten en dos plantas.</h3></p><p>Planta baja compuesta por un comedor con cocina integrada y baño completo. Deck al frente y deck con parrilla y pileta para lavar en la parte de atrás.</p><p>Planta alta compuesta por dos dormitorios. Un dormitorio con cama matrimonial y balc&oacute;n al frente. El segundo dormitorio posee dos camas fijas.</p>",
       "pics": [
         "pics_units/cab4/2019_12/20191222_151535_HDR.jpg",
@@ -124,7 +124,7 @@
     {
       "id": "cab5",
       "code": "unit_cab_5",
-      "title": "Cabaña 5 personas",
+      "title": "Cabaña 4/5 personas",
       "desc": "<p><h3>Sus 62 m2 de superficie cubierta se reparten en dos plantas.</h3></p><p>Planta baja compuesta por un comedor con cocina integrada y toilette. Deck al frente y deck con parrilla y pileta para lavar en la parte de atrás.<p>Planta alta compuesta por dos dormitorios y el baño principal. Un dormitorio con cama matrimonial y balc&oacute;n al frente. El segundo dormitorio posee tres camas fijas.</p>",
       "pics": [
         "pics_units/cab5/2016_11/IMG_0393.jpg",

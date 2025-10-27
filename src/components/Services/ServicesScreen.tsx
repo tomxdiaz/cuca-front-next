@@ -30,6 +30,8 @@ const StyledGrid = styled(Grid)((props: { theme?: any }) => {
   ${theme.breakpoints.down('md')} {
     flex-direction: column;
     gap: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
 
   };
   `;

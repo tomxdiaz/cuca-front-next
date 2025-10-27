@@ -12,6 +12,7 @@ const StyledFloatingButtonsContainer = styled('div')(({ theme }) => ({
   display: 'flex',
   flexDirection: 'row',
   gap: '25px',
+  zIndex: 9999,
 }));
 
 const StyledFloatingButton = styled(Paper)(({ theme }) => ({
@@ -23,7 +24,6 @@ const StyledFloatingButton = styled(Paper)(({ theme }) => ({
     transform: 'scale(1.1)',
   },
   transition: 'transform 0.3s ease-in-out',
-  zIndex: 1,
 }));
 
 const StyledFloatingIcon = styled('img')(({ theme }) => ({
