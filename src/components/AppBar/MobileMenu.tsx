@@ -169,13 +169,13 @@ const MobileMenu = ({ mainMenu, logoSrc }: any) => {
             <StyledLink href={'/mono'}>Monoambiente</StyledLink>
           </StyledDrawerListItem>
           <StyledDrawerListItem>
-            <StyledLink href={'/mono_gde'}>Monoambiente Grande</StyledLink>
+            <StyledLink href={'/mono_gde'}>Monoambiente 2/3 personas</StyledLink>
           </StyledDrawerListItem>
           <StyledDrawerListItem>
-            <StyledLink href={'/cab_4'}>Cabaña 4 Personas</StyledLink>
+            <StyledLink href={'/cab_4'}>Cabaña 3/4 Personas</StyledLink>
           </StyledDrawerListItem>
           <StyledDrawerListItem>
-            <StyledLink href={'/cab_5'}>Cabaña 5 Personas</StyledLink>
+            <StyledLink href={'/cab_5'}>Cabaña 4/5 Personas</StyledLink>
           </StyledDrawerListItem>
         </StyledDrawerList>
       </StyledDrawer>

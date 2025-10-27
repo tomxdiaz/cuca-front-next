@@ -39,7 +39,7 @@
         },
         {
           "code": "unit_mono_gde",
-          "name": "Monoambiente Grande",
+          "name": "Monoambiente 2/3 personas",
           "pos": 2
         },
         {
@@ -96,7 +96,7 @@
     {
       "id": "monoGde",
       "code": "unit_mono_gde",
-      "title": "Monoambiente Grande",
+      "title": "Monoambiente 2/3 personas",
       "desc": "<p>Sus 40 m2 de superficie cubierta se encuentran compuestos por un ambiente grande con cocina y baño completo.</p><p>Cama matrimonial, cama simple fija y espacio para cuna de bebe.</p><p>Deck al frente y deck con parrilla en la parte de atrás.</p>",
       "pics": [
         "pics_units/monogde/2018_11/DSC_3876.jpg",

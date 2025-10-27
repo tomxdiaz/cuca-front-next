@@ -20,7 +20,7 @@ const StyledList = styled('div')((props: { theme?: any }) => {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-right: 80px;
+  margin-right: 45px;
   border-bottom: 1px solid ${theme.palette.custom_grey(0.2).main};
   `;
 });
@@ -32,7 +32,7 @@ const StyledSubList = styled('div')((props: { theme?: any }) => {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-left: 80px;
+  margin-left: 45px;
   border-bottom: 1px solid ${theme.palette.custom_grey(0.2).main};
   `;
 });
@@ -86,7 +86,7 @@ const DesktopMenu = (props: any) => {
             <StyledListItem>Monoambiente</StyledListItem>
           </StyledLink>
           <StyledLink href={'/mono_gde'}>
-            <StyledListItem>Monoambiente Grande</StyledListItem>
+            <StyledListItem>Monoambiente 2/3 Personas</StyledListItem>
           </StyledLink>
           <StyledLink href={'/cab_4'}>
             <StyledListItem>Cabaña 3/4 Personas</StyledListItem>
